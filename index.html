@@ -911,29 +911,6 @@ const locations = [
   },
   // TIER 2
   {
-    id: 'glenn-dale',
-    name: 'Glenn Dale Hospital',
-    tier: '2',
-    tierLabel: 'Tier 2',
-    lat: 38.9834, lng: -76.8261,
-    address: '5201 Glenn Dale Road, Glenn Dale, Prince George\'s County, MD 20769',
-    distance: '~25 mi from Baltimore',
-    type: 'TB sanatorium, 23 buildings (1934)',
-    status: 'Vacant since 1981, county seeking new owner',
-    owner: "Prince George's County Parks",
-    scriptMatch: 3,
-    filmReady: false,
-    imgUrl: 'img/glenn-dale.jpg',
-    imgCredit: 'Wikimedia Commons',
-    desc: '23-building, 216-acre campus abandoned for 40+ years. Georgian Revival brick from the 1930s. On the National Register of Historic Places. PG County actively seeking development partner as of Feb 2026. Preservation Maryland has been an active advocate. Heavily documented by urban explorers.',
-    features: 'Multi-building 1930s institutional campus ✓, wooded setting ✓, long abandoned ✓, on-going county re-use effort (production inquiry may receive favorable hearing).',
-    missing: 'TB sanatorium, not juvenile facility — no cells. Asbestos documented. Decades of deferred maintenance. Structural inspection mandatory.',
-    contact: 'PG County Parks — pgparks.com/projects/glenn-dale-hospital · Preservation Maryland for introduction.',
-    verdict: 'HIGH PRIORITY SCOUT for Admin, Mess Hall, Dormitory equivalents.',
-    concerns: 'Asbestos. Roof integrity. Environmental remediation assessment required before crew deployment.',
-    incentive: 'MD 28% tax credit'
-  },
-  {
     id: 'crownsville',
     name: 'Crownsville Hospital Memorial Park',
     tier: '2',
@@ -1072,8 +1049,8 @@ const locations = [
   {
     id: 'sweet-springs',
     name: 'Sweet Springs Resort ("Old Sweet")',
-    tier: '1',
-    tierLabel: 'Tier 1 (pending call)',
+    tier: '2',
+    tierLabel: 'Tier 2',
     lat: 37.6194, lng: -80.2400,
     address: '12 Sweet Springs Rd, Sweet Springs, Monroe County, WV',
     distance: '~3:30 from Cumberland',
@@ -1113,28 +1090,6 @@ const locations = [
     concerns: 'Property is actively for sale — could close at any time. Move fast.',
     incentive: 'WV 27% refundable + 4% bonus for 10 WV residents = 31% · $50K min spend · transferable · no cap'
   },
-  {
-    id: 'mt-savage-school',
-    name: 'Former Mt. Savage School',
-    tier: '2',
-    tierLabel: 'Tier 2',
-    lat: 39.7011, lng: -78.8789,
-    address: '17006 Mount Savage Rd NW, Frostburg, MD 21532',
-    distance: '~20 minutes from Cumberland',
-    type: '1920s brick school — closed',
-    status: 'For sale · listed by Innovation Properties LLC · on market extended period',
-    owner: 'Innovation Properties LLC',
-    scriptMatch: 3,
-    filmReady: false,
-    imgUrl: 'img/mt-savage-school.jpg',
-    desc: 'THE closest institutional candidate to Cumberland — 20 minutes away. 1920s brick school building with long unadorned halls. Extended time on market = motivated seller. Best role: pickup unit + specific scenes (principal\'s office, classroom, cafeteria, locker room, boiler room). In-state for MD 28% credit IF credit survives June 30 sunset. MLS #MDAL2014220.',
-    features: '20 min from production hub ✓, 1920s brick ✓, long halls ✓, motivated for-sale owner ✓, MD in-state for tax credit ✓.',
-    missing: 'Smaller scale than true compound sites — not a primary-anchor candidate. No prior filming history. Condition unverified from listing alone — scout required.',
-    contact: 'Innovation Properties LLC via Northrop Realty MLS #MDAL2014220',
-    verdict: 'PICKUP + SECOND UNIT play. Close enough that a scout is free. Use for scene-specific interiors, not as primary anchor.',
-    concerns: 'Scale limits it to supporting role. MD credit sunset risk.',
-    incentive: 'MD 28% tax credit — see SUNSET WARNING'
-  },
   // FROM 2nd research pass (Apr 16 2026 — Gemini Deep Research + consolidated school-closure findings)
   {
     id: 'fort-ritchie',
@@ -1159,28 +1114,6 @@ const locations = [
     incentive: 'MD 28% tax credit — see SUNSET WARNING'
   },
   {
-    id: 'kitzmiller',
-    name: 'Former Kitzmiller Elementary School',
-    tier: '2',
-    tierLabel: 'Tier 2',
-    lat: 39.3922, lng: -79.1839,
-    address: 'Kitzmiller, Garrett County, MD 21538',
-    distance: '~48 mi · ~1:00 from Cumberland',
-    type: 'Former public elementary school',
-    status: 'Partial community use · most of building idle',
-    owner: 'Town of Kitzmiller',
-    scriptMatch: 3,
-    filmReady: false,
-    imgUrl: 'img/kitzmiller-school.jpg',
-    desc: 'Town-owned former elementary school. Head Start and thrift shop occupy small portions; most of the building is idle community hall. Classic mid-century Appalachian brick elementary — long corridors, gym, cafeteria, classrooms. Municipal owner = very low access cost expected. MD in-state for tax credit.',
-    features: 'Long corridors ✓, gym ✓, cafeteria ✓, classrooms ✓, town-government owner (low cost) ✓, MD tax credit eligible ✓, 1hr from Cumberland ✓.',
-    missing: 'Active Head Start + thrift shop tenants require scheduling around their days. Building size smaller than Mt. Savage. No prior film history.',
-    contact: 'Town of Kitzmiller municipal office · (301) 453-3449',
-    verdict: 'CHEAP PICKUP CANDIDATE. Municipal owners typically say yes for a few hundred/day.',
-    concerns: 'Active tenant schedule. Condition of idle portions unverified.',
-    incentive: 'MD 28% tax credit — see SUNSET WARNING'
-  },
-  {
     id: 'rowlesburg',
     name: 'Rowlesburg School',
     tier: '2',
@@ -1202,28 +1135,33 @@ const locations = [
     concerns: 'Upper-floor condition unverified.',
     incentive: 'WV 27% refundable + 4% bonus for 10 WV residents = 31%'
   },
-  {
-    id: 'mapleton-union',
-    name: 'Mapleton-Union Elementary School',
-    tier: '2',
-    tierLabel: 'Tier 2',
-    lat: 40.3917, lng: -77.9328,
-    address: 'Mapleton Depot, Huntingdon County, PA',
-    distance: '~2:30 from Cumberland',
-    type: 'Former public elementary school · 7.5 acres',
-    status: 'Active sealed-bid sale window · Jan 2026 posting',
-    owner: 'Mount Union Area School District (MUASD)',
-    scriptMatch: 3,
-    filmReady: false,
-    imgUrl: 'img/mapleton-school.jpg',
-    desc: 'MUASD posted sealed bids for the property January 2026 — inspection by appointment. 7.5 acres, fully vacant. During an active bid window the district is exceptionally motivated to allow film access (positive attention on the listing + revenue before sale). **Time-sensitive opportunity** — move this week; once sold, the new owner inherits and pricing becomes unpredictable.',
-    features: 'Fully vacant ✓, 7.5-acre site ✓, motivated district (active bids) ✓, mid-century institutional geometry ✓.',
-    missing: 'Time window closes as soon as bids accepted. 2.5hr drive. PA transferable credit is weaker than WV refundable.',
-    contact: 'MUASD (814) 542-8631 · sealed bid info at muasd.org',
-    verdict: 'TIME-SENSITIVE. Act this week while bids are open.',
-    concerns: 'Distance. Could be sold before shoot window opens.',
-    incentive: 'PA 25% base / 30% with Qualified Production Facility · transferable'
-  },
+  // ==========================================================
+  // REMOVED FROM ACTIVE LIST (second producer review — Apr 2026,
+  // grounded in screenplay requirements: multi-building compound
+  // with central-yard sightlines + real cell infrastructure OR
+  // space to build + gym + maintenance tunnel)
+  // ==========================================================
+  // SCRIPT-MISMATCH CUTS:
+  //   Glenn Dale Hospital       — asbestos + structural issues make it
+  //                               unfilmable at $237K budget
+  //                               (abatement alone eats Location line).
+  //                               23 buildings is tempting but no cells
+  //                               and no crew-safe interiors.
+  //   Kitzmiller Elementary     — single building, redundant with
+  //                               Mt. Savage School which is closer
+  //                               (20 min vs. 1hr), covers same scenes.
+  //   Mapleton-Union Elementary — 2.5hr from Cumberland, single
+  //                               building, weaker PA credit than
+  //                               the 4 WV options already in play.
+  //   Mt. Savage School         — DEMOTED to Secondary. Single school
+  //                               not a compound, but useful pickup
+  //                               at 20 min for classroom/hallway
+  //                               interiors.
+  //   Sweet Springs Resort      — DEMOTED to Tier 2. Resort + sanatorium
+  //                               wings useful as Admin/Mess Hall doubles
+  //                               but owner is mid-restoration and
+  //                               site lacks cells + gym.
+  //
   // PERMANENTLY IMPOSSIBLE:
   //   Victor Cullen Center      — active DJS facility, abuse litigation
   //   Henryton State Hospital   — demolished 2013
@@ -1324,6 +1262,17 @@ const secondaryLocations = [
     placeholderType: 'forest',
     desc: "Private 100-acre arts center in Arnolds Valley, VA — originally a 1930s CCC camp, then juvenile correctional facility (NBJCC). Demoted from primary: current buildings lack institutional decay aesthetic. BUT the thematic provenance (CCC → youth detention) is an exact match for the script's fictional facility origin — useful as flashback exterior / character-backstory location, not principal photography. On-site cabins for crew housing. Film-friendly private owner. 3hr drive.",
     address: 'Natural Bridge Station, VA · Kpannabecker@comcast.net · 540-460-1542'
+  },
+  {
+    id: 'mt-savage-school',
+    name: 'Former Mt. Savage School',
+    tier: 'secondary',
+    tierLabel: 'Secondary',
+    lat: 39.7011, lng: -78.8789,
+    imgUrl: 'img/mt-savage-school.jpg',
+    placeholderType: 'institution',
+    desc: "THE closest institutional candidate to Cumberland — 20 minutes away. 1920s brick school with long unadorned halls. For sale via Innovation Properties LLC (MLS #MDAL2014220), extended market time = motivated seller. Not a primary anchor (single building, no cells, no compound sightlines). PICKUP & SECOND UNIT only: principal's office, classroom, cafeteria, locker room, boiler room interiors.",
+    address: "17006 Mount Savage Rd NW, Frostburg, MD 21532"
   },
   {
     id: 'st-michaels-frostburg',
