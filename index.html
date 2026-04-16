@@ -313,6 +313,129 @@ body {
 .tier-secondary { background: rgba(74,109,143,0.15); color: var(--blue); }
 .tier-x { background: rgba(162,64,64,0.15); color: var(--tier-x); }
 
+.loc-card-cost {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  margin-left: 0.4rem;
+  background: rgba(255,255,255,0.04);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+.loc-card-cost[data-cost="$$$"] { color: #d6a46b; border-color: rgba(214,164,107,0.3); }
+.loc-card-cost[data-cost="$$"] { color: #a8b88a; border-color: rgba(168,184,138,0.3); }
+.loc-card-cost[data-cost="$"] { color: #7aab8c; border-color: rgba(122,171,140,0.3); }
+
+/* Coverage matrix */
+.coverage-matrix {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  background: var(--bg-raised);
+}
+.coverage-matrix table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+.coverage-matrix th {
+  background: var(--bg-elevated);
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+}
+.coverage-matrix th:first-child { text-align: left; padding-left: 1rem; min-width: 180px; }
+.coverage-matrix td {
+  padding: 0.55rem 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+.coverage-matrix td:first-child {
+  text-align: left;
+  padding-left: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+.coverage-matrix tr:hover td { background: rgba(255,255,255,0.02); }
+.cov-yes { color: var(--tier-1); font-weight: 600; }
+.cov-partial { color: var(--tier-2); }
+.cov-build { color: var(--amber); font-size: 0.75rem; }
+.cov-no { color: rgba(162,64,64,0.55); }
+.cov-note {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+}
+
+/* Scenario cards */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.scenario-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.scenario-card h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+.scenario-locs {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-bright);
+  letter-spacing: 0.04em;
+}
+.scenario-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.5rem 0;
+}
+.scenario-meta span { white-space: nowrap; }
+.scenario-card .coverage-pct {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--accent-bright);
+  font-weight: 400;
+  line-height: 1;
+}
+.scenario-card p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+.scenario-card .scenario-pros { color: var(--tier-1); font-size: 0.76rem; }
+.scenario-card .scenario-cons { color: var(--tier-2); font-size: 0.76rem; }
+
 .loc-card-address {
   font-size: 0.75rem;
   color: var(--text-muted);
@@ -600,6 +723,8 @@ footer {
   <a href="#blueprint">Blueprint</a>
   <a href="#locations">Locations</a>
   <a href="#scorecard">Scorecard</a>
+  <a href="#coverage">Coverage</a>
+  <a href="#scenarios">Strategy</a>
   <a href="#secondary">Secondary</a>
   <a href="#incentives">Incentives</a>
   <a href="#checklist">Checklist</a>
@@ -661,7 +786,7 @@ footer {
 <section class="section" id="map-section">
   <p class="section-label">Regional Overview</p>
   <h2>Location Map</h2>
-  <p class="section-desc">Seven primary institutional candidates after producer review. Click pins for details. Color-coded by tier: green = Tier 1 (anchor candidates — owner-operated film rentals confirmed), amber = Tier 2 (strong, more logistics), blue = secondary locations. Eliminated and ruled-out sites documented in source for record.</p>
+  <p class="section-desc">12 primary candidates across PA/WV/MD/OH after two rounds of producer review, grounded in screenplay requirements. Color-coded by tier: green = Tier 1 (anchor candidates), amber = Tier 2 (strong, more logistics), blue = secondary / B-unit / origin-site. See Summary Scorecard + Sub-Location Coverage grid below for cross-comparison, and Strategy Decks for anchor-pair scenarios.</p>
   <div id="map"></div>
 </section>
 
@@ -690,31 +815,148 @@ footer {
 <section class="section" id="scorecard">
   <p class="section-label">Comparison</p>
   <h2>Summary Scorecard</h2>
-  <p class="section-desc">Ranked by script match, production readiness, and logistical feasibility.</p>
+  <p class="section-desc">All 12 primary candidates ranked by script match and production readiness. Cost tier uses three buckets: <strong>$</strong> = public/surplus/municipal (~$500–2K/day), <strong>$$</strong> = owner-operated/for-sale/private ($1–8K/day negotiable), <strong>$$$</strong> = commercial film-rental business ($10–40K/week).</p>
 
   <div class="table-wrap">
     <table>
       <thead>
         <tr>
           <th>Location</th>
+          <th>Tier</th>
           <th>State</th>
-          <th>Type</th>
-          <th>Status</th>
+          <th>Distance from Cumberland</th>
           <th>Script Match</th>
-          <th>Distance</th>
-          <th>Film-Ready</th>
+          <th>Cost</th>
+          <th>Why it's on the list</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Trans-Allegheny Lunatic Asylum</td><td>WV</td><td>Psychiatric hospital (1864)</td><td>Active tours + JCFilms Oct 2025</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~3:15</td><td>✅ Seclusion wing tours</td></tr>
-        <tr><td>Pennhurst State School</td><td>PA</td><td>State institution (1908)</td><td>Active haunt + film bookings</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~1:45</td><td>✅ "Devon" 2024 feature</td></tr>
-        <tr><td>WV Penitentiary (Moundsville)</td><td>WV</td><td>Gothic stone prison (1866)</td><td>Tourism + active film venue</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~4 hrs (2:34 from Cumberland)</td><td>✅ Silence of the Lambs · Castle Rock</td></tr>
-        <tr><td>SCI Cresson Prison</td><td>PA</td><td>State prison + TB sanatorium</td><td>Owner-operated tours</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~3:30 (2:00 from Cumberland)</td><td>✅ Real cells, tunnels, yard intact</td></tr>
-        <tr><td>Glenn Dale Hospital</td><td>MD</td><td>TB sanatorium, 23 buildings</td><td>Vacant since 1981</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>~25 mi</td><td>PG Parks inquiry</td></tr>
-        <tr><td>Crownsville Hospital</td><td>MD</td><td>Psychiatric hospital</td><td>Vacant 2004, partial renovation</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>~25 mi</td><td>Prior film history (House of Cards)</td></tr>
-        <tr><td>Ohio State Reformatory (Mansfield)</td><td>OH</td><td>Reformatory (1896–1990)</td><td>Active museum + film rentals</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~4:30 from Cumberland</td><td>✅ Shawshank · dedicated rentals staff</td></tr>
+        <tr><td>SCI Cresson</td><td>1</td><td>PA</td><td>~2:00</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$</td><td>Only location with all 12 script sub-locations in one footprint</td></tr>
+        <tr><td>Scotland Campus</td><td>1</td><td>PA</td><td>~1:42</td><td><span class="stars">★★★★★</span></td><td>$$</td><td>75 buildings + 1892 tunnels · Ch.11 owner · LocationsHub listed</td></tr>
+        <tr><td>Quehanna Boot Camp</td><td>1</td><td>PA</td><td>~3:30</td><td><span class="stars">★★★★★</span></td><td>$</td><td>Just-closed boot camp = perfect juvenile aesthetic · PA DGS surplus</td></tr>
+        <tr><td>Pence Springs Resort</td><td>1</td><td>WV</td><td>~3:24</td><td><span class="stars">★★★★★</span></td><td>$$</td><td>Intact 1947–85 women's prison cells on 3rd floor · WV credit</td></tr>
+        <tr><td>Trans-Allegheny Lunatic Asylum</td><td>1</td><td>WV</td><td>~3:15</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$$</td><td>Seclusion-wing cells · JCFilms 2025 feature credit · WV 31%</td></tr>
+        <tr><td>WV Penitentiary (Moundsville)</td><td>1</td><td>WV</td><td>~2:34</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$$</td><td>Silence of the Lambs · Castle Rock · pairs with TALA on WV credit</td></tr>
+        <tr><td>Fort Ritchie</td><td>1</td><td>MD</td><td>~1:00</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$</td><td>Paramount+ Lioness 2024-25 · closest major candidate to Cumberland</td></tr>
+        <tr><td>Pennhurst State School</td><td>1</td><td>PA</td><td>~1:45</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$$</td><td>"Devon" 2024 feature · 20-building campus (no cells — art-dept build)</td></tr>
+        <tr><td>Ohio State Reformatory</td><td>2</td><td>OH</td><td>~4:30</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$$</td><td>Shawshank · professional rental program · OH 30% refundable</td></tr>
+        <tr><td>Crownsville Hospital</td><td>2</td><td>MD</td><td>~25 mi</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>$$</td><td>House of Cards credit · county-motivated · MD credit (extension pending)</td></tr>
+        <tr><td>Sweet Springs Resort</td><td>2</td><td>WV</td><td>~3:30</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$</td><td>170-yr multi-era institution · WV credit · private motivated owner</td></tr>
+        <tr><td>Rowlesburg School</td><td>2</td><td>WV</td><td>~1:30</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>$</td><td>Auditorium = Assembly Hall · gym · 1930s brick · WV credit · public district</td></tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- COVERAGE MATRIX -->
+<section class="section" id="coverage">
+  <p class="section-label">Script × Location Matrix</p>
+  <h2>Sub-Location Coverage</h2>
+  <p class="section-desc">The script demands 9 distinct sub-locations within one compound. This grid answers "if I book this location, what does my script still need elsewhere?" Legend: <span class="cov-yes">✓</span> has it authentically · <span class="cov-partial">◐</span> partial/limited · <span class="cov-build">◇</span> space to build (art dept) · <span class="cov-no">—</span> not present.</p>
+
+  <div class="coverage-matrix">
+    <table>
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th title="Central compound exterior with sightlines to multiple buildings">Yard</th>
+          <th title="5+ isolation cells with metal doors / barred windows">Cells</th>
+          <th title="Communal dining hall with long tables">Mess Hall</th>
+          <th title="Administration building with records, assembly, director's office">Admin</th>
+          <th title="Residential rooms / dormitory wing">Dorm</th>
+          <th title="Full gymnasium with basketball/PE floor">Gym</th>
+          <th title="Long institutional corridors (~80ft tracking shots)">Corridors</th>
+          <th title="Boiler room + maintenance tunnel (narrow, low ceiling)">Boiler/Tunnel</th>
+          <th title="Surrounding dense woods for night exteriors">Woods</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>SCI Cresson</strong></td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td></tr>
+        <tr><td>Scotland Campus</td><td class="cov-yes">✓</td><td class="cov-build">◇</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td></tr>
+        <tr><td>Quehanna Boot Camp</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td></tr>
+        <tr><td>Pence Springs Resort</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td></tr>
+        <tr><td>WV Pen Moundsville</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-partial">◐</td></tr>
+        <tr><td>OSR Mansfield</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-partial">◐</td></tr>
+        <tr><td>Fort Ritchie</td><td class="cov-yes">✓</td><td class="cov-build">◇</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td></tr>
+        <tr><td>TALA</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-no">—</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-no">—</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td></tr>
+        <tr><td>Pennhurst</td><td class="cov-yes">✓</td><td class="cov-build">◇</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td></tr>
+        <tr><td>Crownsville</td><td class="cov-yes">✓</td><td class="cov-no">—</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td></tr>
+        <tr><td>Sweet Springs Resort</td><td class="cov-partial">◐</td><td class="cov-no">—</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-no">—</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td></tr>
+        <tr><td>Rowlesburg School</td><td class="cov-no">—</td><td class="cov-no">—</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td><td class="cov-no">—</td><td class="cov-yes">✓</td><td class="cov-yes">✓</td><td class="cov-partial">◐</td><td class="cov-yes">✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cov-note">SCI Cresson is the only location that covers all 9 categories in a single booking. Every other option needs either an art-dept cell build, a second location, or both.</p>
+</section>
+
+<hr class="divider">
+
+<!-- ANCHOR SCENARIOS -->
+<section class="section" id="scenarios">
+  <p class="section-label">Strategy Decks</p>
+  <h2>Four Anchor-Pair Scenarios</h2>
+  <p class="section-desc">Realistic production strategies depending on how you weight cost / tax credit / proximity / coverage. Each deck names the anchor locations, the tax pool, and what it gets you — and what it still leaves you needing.</p>
+
+  <div class="scenario-grid">
+
+    <div class="scenario-card" style="border-color: var(--tier-1);">
+      <div class="coverage-pct">9/9</div>
+      <h4>A · Single-Anchor Efficiency</h4>
+      <p class="scenario-locs">SCI CRESSON (alone)</p>
+      <div class="scenario-meta">
+        <span>PA 25–30% transferable</span>
+        <span>~2:00 from Cumberland</span>
+        <span>Cost: $$</span>
+      </div>
+      <p>The only location that covers every script sub-location in one footprint. Cells, tunnels, gym, kitchen, chapel, yard — all in one 34-acre campus owned by a commercially motivated private operator. Zero company moves for the main shoot.</p>
+      <p class="scenario-pros">✓ Fewest moves · owner motivated · tunnels match Sc 142-143 perfectly</p>
+      <p class="scenario-cons">✗ Single-point-of-failure (one negotiation, one insurance review) · PA transferable credit is weaker than WV refundable</p>
+    </div>
+
+    <div class="scenario-card" style="border-color: var(--accent-bright);">
+      <div class="coverage-pct">8/9</div>
+      <h4>B · WV Pure</h4>
+      <p class="scenario-locs">TALA + WV PEN MOUNDSVILLE</p>
+      <div class="scenario-meta">
+        <span>WV 31% refundable</span>
+        <span>90 min between anchors</span>
+        <span>Cost: $$$</span>
+      </div>
+      <p>Both commercial film-rental businesses, both on the same WV tax credit pool. TALA gives authentic seclusion cells + corridors; WV Pen gives compound yard + mess hall + chapel + more cells. Only gap: no dedicated Gymnasium space.</p>
+      <p class="scenario-pros">✓ Best tax credit in region · proven feature venues · same jurisdiction</p>
+      <p class="scenario-cons">✗ Commercial rates ($20–60K/week combined) · travel day every company move · no gym (build elsewhere or cut)</p>
+    </div>
+
+    <div class="scenario-card" style="border-color: var(--tier-2);">
+      <div class="coverage-pct">9/9</div>
+      <h4>C · Budget-First</h4>
+      <p class="scenario-locs">QUEHANNA + PENCE SPRINGS + ROWLESBURG</p>
+      <div class="scenario-meta">
+        <span>PA + WV (2 filings)</span>
+        <span>2 jurisdictions</span>
+        <span>Cost: $</span>
+      </div>
+      <p>Quehanna for boot-camp authenticity (dorms, cells, yard, mess), Pence Springs for literal 20th-century cell block + gym, Rowlesburg for assembly hall + public-district cheap access. Covers all 9 categories at a fraction of commercial rates.</p>
+      <p class="scenario-pros">✓ Lowest cost · time-sensitive Quehanna means state negotiates fast · all 9 categories covered</p>
+      <p class="scenario-cons">✗ Three company moves · PA DGS surplus timing is the wildcard · two tax filings</p>
+    </div>
+
+    <div class="scenario-card" style="border-color: var(--blue);">
+      <div class="coverage-pct">8/9</div>
+      <h4>D · Proximity-First (MD-anchored)</h4>
+      <p class="scenario-locs">FORT RITCHIE + SCI CRESSON (cell pickup)</p>
+      <div class="scenario-meta">
+        <span>MD 28% + PA 25–30%</span>
+        <span>1h + 2h from Cumberland</span>
+        <span>Cost: $$</span>
+      </div>
+      <p>Fort Ritchie as primary compound (Lioness already proved feature access; Castle + barracks + gym + parade field do heavy lifting). Short trip to SCI Cresson for cell-block interiors. Keeps principal crew inside 1hr of Cumberland basecamp.</p>
+      <p class="scenario-pros">✓ Closest to production hub · MD credit extension now likely (HB0898) · two jurisdictions stack · lower crew per-diem</p>
+      <p class="scenario-cons">✗ Fort Ritchie is multi-tenant (schedule around business leases) · two-state tax filing adds admin</p>
+    </div>
+
   </div>
 </section>
 
@@ -740,7 +982,7 @@ footer {
 <section class="section" id="incentives">
   <p class="section-label">Financial</p>
   <h2>State Film Incentives</h2>
-  <p class="section-desc">Tax credit comparison across the scout region. Maryland's credit keeps the production in-state; Pennsylvania and New York offer competitive alternatives.</p>
+  <p class="section-desc">Tax credit comparison across the scout region. West Virginia is the anchor (31% refundable, no cap, $50K min). Maryland's sunset extension passed both chambers April 13 2026, awaiting Gov. Moore's signature.</p>
 
   <div class="incentive-grid">
     <div class="incentive-card">
@@ -877,6 +1119,8 @@ const locations = [
     owner: 'Private leaseholder (Pennhurst Asylum)',
     scriptMatch: 4,
     filmReady: true,
+    costTier: '$$$',
+    costNote: 'Commercial film-rental business — published rates, feature buyouts $10–25K/week',
     imgUrl: 'img/pennhurst.jpg',
     imgCredit: 'Wikimedia Commons — Admin Building',
     desc: 'The most production-ready fully abandoned institutional campus in the mid-Atlantic. ~20 buildings on 1,400 acres. Multi-story brick with long corridors and large dormitory wards. Operates commercially as "Pennhurst Asylum" haunted attraction. Website explicitly advertises film production access. Feature film "Devon" (2024) shot there — confirmed multi-day access is granted. Paracon & Oddities Expo May 16-17, 2026.',
@@ -900,6 +1144,8 @@ const locations = [
     owner: 'Private ownership',
     scriptMatch: 4,
     filmReady: true,
+    costTier: '$$$',
+    costNote: 'Commercial tourism operator — feature rates $10–30K/week estimated',
     imgUrl: 'img/tala.jpg',
     imgCredit: 'Wikimedia Commons — Weston State Hospital',
     desc: 'Largest hand-cut stone building in North America. Active "Seclusion Tour" markets the isolation cell wing directly. The Oct 2025 film crew was identified: "The Asylum" (JCFilms Studios, supernatural horror feature, dir. Jason Campbell) — but it was a ONE-DAY shoot, not multi-week. 2025 season opened March 29, 2025. Active tours, events, private rentals ongoing.',
@@ -924,6 +1170,8 @@ const locations = [
     owner: 'Anne Arundel County',
     scriptMatch: 3,
     filmReady: false,
+    costTier: '$$',
+    costNote: 'County-owned, prior film history — $2–6K/day via MFO',
     imgUrl: 'img/crownsville.jpg',
     imgCredit: 'Webb Zahn / Wikimedia Commons',
     desc: "500-acre campus, 76 structures, ~1M sq ft. Proven film location: House of Cards, Crazy Eights (2006), own documentary. County acquired for $1 in 2022. $30M state rehab funding approved but well short of full restoration ($67–$207M). Originally the 'Hospital for the Negro Insane' — sensitive historical context.",
@@ -947,6 +1195,8 @@ const locations = [
     owner: 'Big House Produce LLC (bought 2018)',
     scriptMatch: 4,
     filmReady: false,
+    costTier: '$$',
+    costNote: 'Owner-operator (Big House Produce) — multi-week buyout negotiable, likely $5–15K/week',
     imgUrl: 'img/cresson.jpg',
     desc: "Updated Apr 2026: Privately owned by Big House Produce LLC since 2018 — they run it as a dual-use hydroponic farm + urbex/paranormal tour operation (plus police/military airsoft training). That means: experienced with liability, indemnification, large crew access, and commercially motivated to sell multi-day buyouts. ~20 intact buildings on 34 acres: original 1913 sanatorium, older three-story cell blocks, modern two-story cell blocks, prison hospital, chapel, kitchen, gymnasium, yard. Underground utility tunnels. Public tour floor rate is $40/3hr — feature buyout will be multiples above that, but the shell infrastructure exists.",
     features: 'Real cells (modern AND gothic) ✓, long institutional corridors ✓, yard ✓, underground tunnels ✓, owner-operated commercial access ✓, experienced with large-group bookings ✓.',
@@ -969,6 +1219,8 @@ const locations = [
     owner: 'Mansfield Reformatory Preservation Society (501c3)',
     scriptMatch: 4,
     filmReady: true,
+    costTier: '$$$',
+    costNote: 'Professional rental program — $15–40K/week for multi-week feature',
     imgUrl: 'img/osr.jpg',
     desc: 'The Shawshank Redemption facility. Also: Air Force One (1997), Escape Plan: The Extractors (2019), Judas and the Black Messiah (2021 — solitary + West Cell Block). Dedicated rentals liaison, standing insurance template, 250,000 sq ft interior including the six-story East Cell Block (world\'s largest freestanding steel cell block), warden\'s quarters, solitary wing, chapel, hospital wing, administration. Ohio 30% REFUNDABLE credit on all cast/crew/production spend — stronger than PA\'s transferable model.',
     features: 'Dedicated rentals staff ✓, feature-film rate card exists ✓, solitary wing ✓, multi-story cell blocks ✓, proven feature credits ✓, pre-certified insurance workflow ✓.',
@@ -992,6 +1244,8 @@ const locations = [
     owner: 'Moundsville Economic Development Council (MEDC)',
     scriptMatch: 4,
     filmReady: true,
+    costTier: '$$$',
+    costNote: 'Active museum + film venue — $15–40K/week for multi-week feature',
     imgUrl: 'img/wv-pen.jpg',
     imgCredit: 'Wikimedia Commons',
     desc: "PROMOTED TO TIER 1 (Apr 2026). Feature credits: Silence of the Lambs (1991 — Hannibal's cell scenes), Fool's Parade (1971), Out of the Furnace (2013), Hulu's Castle Rock (2017, stood in for Shawshank State Prison). Plus Ghost Adventures, Ghost Hunters. Self-describes as \"tourist attraction, museum, training facility, and filming location.\" **Critical: shares WV 27%+4% refundable tax credit with Trans-Allegheny — same jurisdiction, 90 miles apart. Pairing the two = one tax pool, full institutional visual range, 20–30 shoot days anchored entirely on WV credit, no MD June 30 sunset exposure.** Gothic sandstone main, four cell blocks (Old Man Colony, North Hall, South Hall, New Wall), execution chamber, sugar shack (inmate bar), chapel.",
@@ -1016,6 +1270,8 @@ const locations = [
     owner: 'MSLH LLC (Bajnon family) — in bankruptcy',
     scriptMatch: 5,
     filmReady: true,
+    costTier: '$$',
+    costNote: 'Chapter 11 owner, highly motivated — $2–8K/day estimated',
     imgUrl: 'img/scotland-campus.jpg',
     desc: '185 acres, 75 buildings, including original 1892 tunnel system. Already listed on LocationsHub film marketplace (ID 043-10084203). Owner filed Chapter 11 January 1, 2026 — bankruptcy context means highly motivated for any rental income. Summer (June–August) blocked by Hasidic summer camp lease; September–May wide open. This is a sleeper anchor — a 75-building campus with tunnels at 1h 42min from Cumberland is rare.',
     features: 'Enormous scale ✓, tunnel system ✓, multi-era institutional architecture ✓, already on a film marketplace ✓, motivated-seller ownership context ✓, 1h 42min drive from Cumberland ✓.',
@@ -1038,6 +1294,8 @@ const locations = [
     owner: 'PA Department of General Services (surplus)',
     scriptMatch: 5,
     filmReady: false,
+    costTier: '$',
+    costNote: 'State surplus — Facility Use Agreement at holding-cost rate, $500–2K/day',
     imgUrl: 'img/quehanna.jpg',
     desc: 'Just closed Jan 28 2026. Final inmates transferred. Ownership transferred to PA DGS for disposal. Architecturally a PERFECT match for Spruce Hollow: military-style boot camp layout = less hardened than a max prison but more institutional than a school. Authentic dorms + cells + communal halls. **No perimeter fence** (why it closed — didn\'t qualify as secure; why it\'s an asset for us — matches script\'s "isolated but not hardened" geography). Remote Karthaus Township = no neighbors to complain about night shoots.',
     features: 'Authentic boot-camp layout ✓, dorms ✓, cells ✓, no fence (matches script) ✓, remote/isolated ✓, just-closed (intact condition) ✓, state motivated to recoup holding costs ✓.',
@@ -1060,6 +1318,8 @@ const locations = [
     owner: 'Ashby Berkley (purchased at auction 2015)',
     scriptMatch: 4,
     filmReady: false,
+    costTier: '$$',
+    costNote: 'Individual owner, mid-restoration — $1–4K/day estimated',
     imgUrl: 'img/sweet-springs.jpg',
     desc: '170-year layered institutional history — mineral springs resort (1800s), then TB sanatorium, then hospital, then state-run home for the elderly. Multiple eras of institutional decay visible across the campus. Slate roof + sanatorium wings + hospital wings + main building. Owner Ashby Berkley bought at auction 2015 and has been running a multi-year restoration personally — cash-constrained, motivated by location income AND preservation press. **Same WV 27% + 4% refundable credit jurisdiction as TALA and WV Pen.**',
     features: 'Multi-era institutional decay ✓, sanatorium wings ✓, hospital wings ✓, 170-year layered history ✓, individual owner (flexibility) ✓, WV credit jurisdiction ✓, atmospheric slate-roof main ✓.',
@@ -1082,6 +1342,8 @@ const locations = [
     owner: 'Private · actively listed',
     scriptMatch: 5,
     filmReady: false,
+    costTier: '$$',
+    costNote: 'For-sale property, motivated listing agent — $1–5K/day estimated',
     imgUrl: 'img/pence-springs.jpg',
     desc: '138 acres, 44,000 SF total. 25K SF Georgian brick hotel + gymnasium + arts building + dormitory rooms. **CRITICAL: intact women\'s prison cell block from 1947–1985 on the 3rd floor — literal cells, on-spec for Spruce Hollow interiors.** Building was the Greenbrier Academy women\'s correctional facility for 38 years. Same WV tax-credit jurisdiction as TALA and WV Pen. Owner is actively trying to sell — location filming would generate attention on the listing.',
     features: 'Actual prison cell block (1947–1985) ✓, Georgian brick hotel ✓, gym ✓, dormitory rooms ✓, for-sale owner motivated to say yes ✓, WV credit jurisdiction ✓.',
@@ -1105,6 +1367,8 @@ const locations = [
     owner: 'PenMar Development Corporation (non-profit public corp)',
     scriptMatch: 4,
     filmReady: true,
+    costTier: '$$',
+    costNote: 'PenMar Development Corp — paramount+ Lioness just shot, $2–8K/day range',
     imgUrl: 'img/fort-ritchie.jpg',
     desc: 'Just-promoted: **Paramount+ TV series Lioness filmed on-site 2024–25 — confirmed recent feature-quality production access.** Closed 1998 under BRAC. Castle-like stone Officers\' Club ("The Castle"), concrete barracks, parade field, gymnasium, ammo bunkers. Some buildings rehabbed (award-winning tax-credit project), others stand mostly as-was. **1 hour from Cumberland** — the closest major institutional candidate. PenMar is non-profit and motivated by community-benefit revenue, not commercial film-rental margin.',
     features: 'Stone "Castle" Officers\' Club ✓, concrete barracks ✓, parade field ✓, gym ✓, Paramount+ Lioness credit ✓, 1hr from Cumberland ✓, non-commercial landlord ✓.',
@@ -1127,6 +1391,8 @@ const locations = [
     owner: 'Preston County Board of Education',
     scriptMatch: 3,
     filmReady: false,
+    costTier: '$',
+    costNote: 'Public school district — $500–1.5K/day typical range',
     imgUrl: 'img/rowlesburg-school.jpg',
     desc: 'Closed to students 2025 when Preston County merged into Aurora School. 1930s 2-story brick, 13.6 acres. Long corridors, auditorium, gym, library. Lower floors partially converted to Opportunity Center office space; upper floors largely unused. **In WV tax-credit jurisdiction (27%+4% refundable).** Preston BOE one-call covers sister closures at Fellowsville Elementary + Tunnelton-Denver.',
     features: '1930s institutional brick ✓, long corridors ✓, auditorium ✓, gym ✓, library ✓, WV tax-credit jurisdiction ✓, public district owner (cheap) ✓.',
@@ -1317,6 +1583,7 @@ function renderCard(loc) {
         <div class="loc-card-header">
           <h3 class="loc-card-name">${loc.name}</h3>
           <span class="loc-card-tier ${tierClass}">${loc.tierLabel}</span>
+          ${loc.costTier ? `<span class="loc-card-cost" data-cost="${loc.costTier}" title="${loc.costNote || ''}">${loc.costTier}</span>` : ''}
         </div>
         <p class="loc-card-address">${loc.address}</p>
         <p class="loc-card-desc">${loc.desc}</p>
