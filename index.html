@@ -660,7 +660,7 @@ footer {
 <section class="section" id="map-section">
   <p class="section-label">Regional Overview</p>
   <h2>Location Map</h2>
-  <p class="section-desc">All researched candidates within the scout radius. Click pins for details. Color-coded by tier: green = Tier 1 (best match, filmable now), amber = Tier 2 (strong, more logistics), brown = Tier 3 (viable with caveats), blue = secondary locations, red = eliminated.</p>
+  <p class="section-desc">Seven primary institutional candidates after producer review. Click pins for details. Color-coded by tier: green = Tier 1 (anchor candidates — owner-operated film rentals confirmed), amber = Tier 2 (strong, more logistics), blue = secondary locations. Eliminated and ruled-out sites documented in source for record.</p>
   <div id="map"></div>
 </section>
 
@@ -676,7 +676,6 @@ footer {
     <button class="filter-chip active" data-tier="all" onclick="filterCards('all')">All</button>
     <button class="filter-chip" data-tier="1" onclick="filterCards('1')">Tier 1</button>
     <button class="filter-chip" data-tier="2" onclick="filterCards('2')">Tier 2</button>
-    <button class="filter-chip" data-tier="3" onclick="filterCards('3')">Tier 3</button>
     <button class="filter-chip" data-tier="secondary" onclick="filterCards('secondary')">Secondary</button>
     <!-- Eliminated tier removed — impossible locations struck from list -->
   </div>
@@ -706,16 +705,13 @@ footer {
         </tr>
       </thead>
       <tbody>
-        <tr><td>Trans-Allegheny Lunatic Asylum</td><td>WV</td><td>Psychiatric hospital (1864)</td><td>Active tours + 1-day film Oct 2025</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~3:15</td><td>✅ JCFilms / Seclusion wing tours</td></tr>
+        <tr><td>Trans-Allegheny Lunatic Asylum</td><td>WV</td><td>Psychiatric hospital (1864)</td><td>Active tours + JCFilms Oct 2025</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~3:15</td><td>✅ Seclusion wing tours</td></tr>
         <tr><td>Pennhurst State School</td><td>PA</td><td>State institution (1908)</td><td>Active haunt + film bookings</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~1:45</td><td>✅ "Devon" 2024 feature</td></tr>
-        <tr><td>Alfred D. Noyes Children's Ctr</td><td>MD</td><td>Juvenile detention (single "H" bldg)</td><td>❗ Active $6M dehardening</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>~45 mi</td><td>Window likely closed</td></tr>
-        <tr><td>Mid-Orange / Warwick</td><td>NY</td><td>Boys' reform school (1930s)</td><td>❗ Redeveloped commercial/sports</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>~3.5–4 hrs</td><td>✅ A24 Sing Sing / Marty Supreme</td></tr>
+        <tr><td>WV Penitentiary (Moundsville)</td><td>WV</td><td>Gothic stone prison (1866)</td><td>Tourism + active film venue</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~4 hrs (2:34 from Cumberland)</td><td>✅ Silence of the Lambs · Castle Rock</td></tr>
+        <tr><td>SCI Cresson Prison</td><td>PA</td><td>State prison + TB sanatorium</td><td>Owner-operated tours</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~3:30 (2:00 from Cumberland)</td><td>✅ Real cells, tunnels, yard intact</td></tr>
         <tr><td>Glenn Dale Hospital</td><td>MD</td><td>TB sanatorium, 23 buildings</td><td>Vacant since 1981</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>~25 mi</td><td>PG Parks inquiry</td></tr>
-        <tr><td>Crownsville Hospital</td><td>MD</td><td>Psychiatric hospital</td><td>Vacant 2004, redevelopment</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>~25 mi</td><td>Prior film history</td></tr>
-        <tr><td>Glen Mills Schools</td><td>PA</td><td>Boys' reform school</td><td>❗ Sleighton arson June 2024</td><td><span class="stars">★★</span><span class="stars-empty">★★★</span></td><td>~1:45</td><td>Litigation + trespass enforced</td></tr>
-        <tr><td>SCI Cresson Prison</td><td>PA</td><td>State prison / sanatorium</td><td>Abandoned, photo tours</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~3:30</td><td>Tunnels + cells intact</td></tr>
-        <tr><td>Thunder Bridge</td><td>VA</td><td>CCC camp → juvenile center</td><td>Active arts center</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~3 hrs</td><td>Film-friendly, cabins</td></tr>
-        <tr><td>WV Penitentiary</td><td>WV</td><td>Gothic stone prison (1866)</td><td>Tourism venue</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~4 hrs</td><td>✅ Mindhunter, Castle Rock</td></tr>
+        <tr><td>Crownsville Hospital</td><td>MD</td><td>Psychiatric hospital</td><td>Vacant 2004, partial renovation</td><td><span class="stars">★★★</span><span class="stars-empty">★★</span></td><td>~25 mi</td><td>Prior film history (House of Cards)</td></tr>
+        <tr><td>Ohio State Reformatory (Mansfield)</td><td>OH</td><td>Reformatory (1896–1990)</td><td>Active museum + film rentals</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>~4:30 from Cumberland</td><td>✅ Shawshank · dedicated rentals staff</td></tr>
       </tbody>
     </table>
   </div>
@@ -762,14 +758,9 @@ footer {
       <p class="incentive-note"><strong>Refundable · no cap · transferable.</strong> $50K min spend. 4% bonus for 10 WV residents = 31%. Best credit in region. TALA + WV Pen qualify fully.</p>
     </div>
     <div class="incentive-card">
-      <p class="incentive-state">New York</p>
-      <p class="incentive-pct">25–35%</p>
-      <p class="incentive-note">Generous but competitive application. Warwick qualifies.</p>
-    </div>
-    <div class="incentive-card">
-      <p class="incentive-state">Virginia</p>
-      <p class="incentive-pct">15–20%</p>
-      <p class="incentive-note">Lower credit. Thunder Bridge would require VA filing.</p>
+      <p class="incentive-state">Ohio</p>
+      <p class="incentive-pct">30%</p>
+      <p class="incentive-note"><strong>Refundable</strong> on all cast/crew/production spend. OSR Mansfield qualifies. Stronger than PA's transferable model, but distance (4:30 from Cumberland) is the trade-off.</p>
     </div>
   </div>
 </section>
@@ -826,31 +817,30 @@ footer {
       <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Most immediately bookable abandoned campus. Request scout visit this week.</p>
     </div>
     <div class="contact-card">
-      <h4>4. Orange County NY Film Office</h4>
-      <p>📞 (845) 615-3885</p>
-      <p>🌐 <a href="https://orangecountynyfilm.org/locations/" target="_blank">orangecountynyfilm.org</a></p>
-      <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Warwick / Mid-Orange campus. Proven film location (OITNB). Reform school provenance.</p>
+      <h4>4. WV Penitentiary (Moundsville)</h4>
+      <p>📞 (304) 845-6200 · backup (304) 845-9810 x403</p>
+      <p>🌐 <a href="https://wvpentours.com" target="_blank">wvpentours.com</a></p>
+      <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Silence of the Lambs, Castle Rock. Pairs with TALA on same WV credit. Verify current operating status on first call (Yelp flagged "temporarily closed" Jan 2026).</p>
     </div>
     <div class="contact-card">
-      <h4>5. PG County Parks — Glenn Dale</h4>
+      <h4>5. SCI Cresson / Big House Produce</h4>
+      <p>🌐 <a href="https://cressonsanatorium.com/tours" target="_blank">cressonsanatorium.com/tours</a></p>
+      <p>💬 FB Messenger @cressonsanatorium (fastest channel)</p>
+      <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Owner runs commercial tours + airsoft training. Already experienced with indemnification and large groups. Negotiate multi-week buyout rate.</p>
+    </div>
+    <div class="contact-card">
+      <h4>6. Ohio State Reformatory (Mansfield)</h4>
+      <p><strong>Ashleigh Ramey</strong>, MRPS Rentals</p>
+      <p>📞 (419) 522-2644 · ✉ ashleigh@mrps.org</p>
+      <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Professional fallback. Dedicated rentals staff, feature rate card exists, standing insurance template. OH 30% refundable.</p>
+    </div>
+    <div class="contact-card">
+      <h4>7. PG County Parks — Glenn Dale</h4>
       <p>🌐 <a href="https://pgparks.com/projects/glenn-dale-hospital" target="_blank">pgparks.com/projects/glenn-dale-hospital</a></p>
       <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">County actively seeking uses. Preservation Maryland can facilitate intro.</p>
     </div>
     <div class="contact-card">
-      <h4>6. SCI Cresson / Cresson Sanatorium</h4>
-      <p>📧 <a href="mailto:info@cressonsanatorium.com">info@cressonsanatorium.com</a></p>
-      <p>📞 814-940-5353</p>
-      <p>🌐 <a href="https://cressonsanatorium.com" target="_blank">cressonsanatorium.com</a></p>
-      <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Has cells, tunnels, yard. Commercialized for tours. Negotiate long-term rate.</p>
-    </div>
-    <div class="contact-card">
-      <h4>7. Thunder Bridge</h4>
-      <p>📧 <a href="mailto:Kpannabecker@comcast.net">Kpannabecker@comcast.net</a></p>
-      <p>📞 540-460-1542</p>
-      <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">CCC camp → juvenile center → arts center. On-site housing. Highest thematic match.</p>
-    </div>
-    <div class="contact-card">
-      <h4>8. Anne Arundel County Parks</h4>
+      <h4>8. Anne Arundel County Parks — Crownsville</h4>
       <p>🌐 Via Maryland Film Office</p>
       <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Crownsville Hospital. Reference prior House of Cards filming history.</p>
     </div>
@@ -860,8 +850,8 @@ footer {
 <footer>
   <p>Spruce Hollow — Location Scouting Guide · April 2026 · Refreshed with deep research verification</p>
   <p style="margin-top:0.5rem;">Script: spruce_hollow_FEB2026.fdx · ~140 pages · 120 filmable scenes · 61 estimated shoot days · Budget est. $237K–$290K</p>
-  <p style="margin-top:0.5rem;color:var(--text-dim);">Key research updates: Noyes downgraded (active dehardening + single-building layout confirmed via PREA audit). Mid-Orange downgraded (commercial redevelopment). Pennhurst confirmed feature-ready ("Devon" 2024). TALA confirmed JCFilms 1-day Oct 2025. MD tax credit sunset flagged. Glen Mills arson documented.</p>
-  <p style="margin-top:0.5rem;color:var(--text-dim);">Recommendation: WV-primary (TALA) + MD-secondary (Green Ridge) split shoot before June 30 to capture both credits.</p>
+  <p style="margin-top:0.5rem;color:var(--text-dim);">Producer review (Apr 2026): 5 primary candidates cut (Noyes, Mid-Orange, Glen Mills, Rockland, Letchworth) after honest evaluation — not "theoretically possible and worth scouting." Cresson promoted to Tier 1 (owner-operated commercial rentals). Thunder Bridge demoted to secondary (flashback use only). WV Pen Moundsville promoted to Tier 1 to pair with TALA on same WV credit pool.</p>
+  <p style="margin-top:0.5rem;color:var(--text-dim);">Recommended anchor: <strong>WV-primary (TALA + WV Pen pairing, 31% refundable)</strong>. Cresson as sleeper pick. OSR as professional fallback. MD locations (Glenn Dale, Crownsville) only if June 30 MD credit extension passes.</p>
 </footer>
 
 <!-- LEAFLET -->
@@ -919,55 +909,6 @@ const locations = [
     concerns: 'JCFilms precedent is 1 day, not 61. Multi-week rate unknown. WV dark-sky lighting rules (shielded below 20°).',
     incentive: 'WV 27% refundable + 4% bonus for 10 WV residents = 31% · $50K min spend · transferable · no cap'
   },
-  {
-    id: 'warwick',
-    name: 'Mid-Orange / Warwick State Training School',
-    tier: '1',
-    tierLabel: 'Tier 1',
-    lat: 41.2490, lng: -74.3601,
-    address: '122 State School Road, Warwick, Orange County, NY 10990',
-    distance: '~3.5–4 hrs from Baltimore',
-    type: "Boys' reform school (1930s) → prison",
-    status: 'Closed 2011, active film location',
-    owner: 'Town of Warwick',
-    scriptMatch: 5,
-    filmReady: true,
-    imgUrl: 'img/mid-orange.jpg',
-    tier: '2',
-    tierLabel: 'Tier 2',
-    desc: "Opened 1930s as New York's State Training School for Boys — a reform school. Closed 2011. A24 credits confirmed: Sing Sing (2023) and Marty Supreme (2024) both filmed here via Hudson Sports Complex. BUT: the campus is now a 'thriving business hub and sports park' — the 1930s dormitory buildings may still stand, but active commercial redevelopment means controlled access and likely significant interior renovation.",
-    features: "Actual boys' reform school origin ✓, 1930s brick dormitory buildings (possibly standing) ✓, A24 production track record ✓, active film office.",
-    missing: 'Significant redevelopment reduces authentic decay aesthetic. Not the "abandoned" campus described in earlier sources. 3.5+ hour drive.',
-    contact: 'Orange County NY Film Office — (845) 291-2136 · orangecountynyfilm.org/filmed-in-orange-county',
-    verdict: 'DOWNGRADED from Tier 1. Redeveloped commercial/recreation use. Ask which dormitories Sing Sing used.',
-    concerns: 'Commercial redevelopment. NY tax credit requires competitive application.',
-    incentive: 'NY 25–35% tax credit · competitive application'
-  },
-  {
-    id: 'noyes',
-    name: 'Alfred D. Noyes Children\'s Center',
-    tier: '1',
-    tierLabel: 'Tier 1',
-    lat: 39.0840, lng: -77.1528,
-    address: '9925 Blackwell Road, Rockville, Montgomery County, MD 20850',
-    distance: '~45 mi from Baltimore',
-    type: 'Juvenile detention facility',
-    status: 'Temporarily closed since Oct 2022',
-    owner: 'Maryland DJS (state-owned)',
-    scriptMatch: 5,
-    filmReady: false,
-    imgUrl: 'img/noyes.jpg',
-    tier: '3',
-    tierLabel: 'Tier 3',
-    scriptMatch: 3,
-    desc: 'UPDATE: Research confirms $3.0M allocated in FY26 Budget Bill (Chapter 602/2025) to actively "deharden" Noyes — removing bars, locks, secure doors — converting it to a drug treatment facility. FY27 adds another $3.0M for 8-bed substance abuse program. From 2021 PREA audit: this is ONE large building in an "H" configuration plus modular education trailers. Not a multi-building campus. NO isolation block. No central yard in the cinematic sense.',
-    features: 'Real MD DJS facility ✓, in-state for MD tax credit ✓, intact buildings as of early 2026.',
-    missing: 'Active dehardening removes exactly the cells/locks the script needs. Single "H" building, not multi-structure campus. Rooms are "youth living units," not cells. Mass-tort abuse litigation makes DJS unlikely to permit horror filming.',
-    contact: 'MD DJS Office of Communications · (410) 230-3100 · Expect denial',
-    verdict: 'DOWNGRADED. Active renovation stripping the exact features we need. Window may already be closed.',
-    concerns: 'Single-building "H" layout ≠ 5-building compound. Dehardening in progress. CVA litigation sensitivity.',
-    incentive: 'MD 28% — see SUNSET WARNING below'
-  },
   // TIER 2
   {
     id: 'glenn-dale',
@@ -1016,33 +957,10 @@ const locations = [
     incentive: 'MD 28% tax credit'
   },
   {
-    id: 'glen-mills',
-    name: 'Glen Mills Schools / Sleighton Farm',
-    tier: '2',
-    tierLabel: 'Tier 2',
-    lat: 39.9009, lng: -75.4762,
-    address: '478 Valley Road, Glen Mills, Delaware County, PA 19342',
-    distance: '~1:45 from Baltimore',
-    type: "Boys' reform school (est. 1826)",
-    status: 'Largely abandoned since 2019',
-    owner: 'PA DHS + private (complex)',
-    filmReady: false,
-    imgUrl: 'img/glen-mills.jpg',
-    imgCredit: 'Photo: Jim, the Photographer — Sleighton Farm (CC BY 2.0)',
-    scriptMatch: 2,
-    desc: "Oldest surviving reform school in the US (est. 1826). License revoked 2019 after abuse documentation. Clock Tower Schools (new nonprofit) received provisional license Jan 2023 for 20 boys on campus (610-459-8100). Adjacent Sleighton Farm: MAJOR ARSON June 2024 destroyed 100-year-old dormitory. PA State Police opened arson investigation. Elwyn (owner) patrols aggressively.",
-    features: "Historical reform school provenance ✓, cottage dormitory layout on vast acreage ✓.",
-    missing: "No single owner/contact publicly identified for vacant portions. Active CVA-adjacent litigation clouds title. Sleighton Farm arson damage active. No productions have been granted access since early 2000s.",
-    contact: 'Clock Tower Schools 610-459-8100 (active 20-bed portion) · Elwyn real estate/facilities for Sleighton',
-    verdict: 'DOWNGRADED. Active litigation + arson investigation + aggressive trespass enforcement make access unlikely.',
-    concerns: 'Insurance at Sleighton likely prohibits production after arson. Abuse litigation makes operators reluctant.',
-    incentive: 'PA 25% transferable'
-  },
-  {
     id: 'cresson',
     name: 'SCI Cresson Prison / Sanatorium',
-    tier: '2',
-    tierLabel: 'Tier 2',
+    tier: '1',
+    tierLabel: 'Tier 1',
     lat: 40.4610, lng: -78.5920,
     address: 'Cresson, Cambria County, PA',
     distance: '~2:00 from Cumberland · ~3:30 from Baltimore',
@@ -1084,29 +1002,6 @@ const locations = [
   },
   // TIER 3
   {
-    id: 'thunder-bridge',
-    name: 'Thunder Bridge',
-    tier: '3',
-    tierLabel: 'Tier 3',
-    lat: 37.6289, lng: -79.5433,
-    address: 'Natural Bridge Station, VA',
-    distance: '~3 hrs from Baltimore',
-    type: 'CCC camp → juvenile center → arts center',
-    status: 'Active arts/camping center',
-    owner: 'Private',
-    scriptMatch: 4,
-    filmReady: true,
-    imgUrl: 'img/natural-bridge.jpg',
-    imgCredit: 'Wikimedia Commons — Natural Bridge, Rockbridge County',
-    desc: "100-acre site that was originally a CCC camp in the 1930s, then a boys' juvenile correctional facility (NBJCC), later Big Brothers/Big Sisters camp, now a private arts/culture center. The literal transition from forestry camp to youth detention mirrors the script's fictional history. Nestled in Arnolds Valley at the foot of the Blue Ridge Mountains.",
-    features: "CCC camp → juvenile center provenance ✓, isolated wooded setting ✓, on-site cabins for crew housing ✓, private ownership (film-friendly) ✓, borders Jefferson National Forest.",
-    missing: 'Current buildings may not have institutional aesthetic. No cells. 3-hour drive.',
-    contact: 'Kpannabecker@comcast.net · 540-460-1542 · thunderbridge.my.canva.site',
-    verdict: 'Most accurate thematic match. Highest historical alignment.',
-    concerns: 'May lack the deteriorated institutional look. Virginia tax credit is lower (15–20%).',
-    incentive: 'VA 15–20% tax credit'
-  },
-  {
     id: 'wv-pen',
     name: 'West Virginia Penitentiary (Moundsville)',
     tier: '1',
@@ -1129,58 +1024,38 @@ const locations = [
     concerns: 'Seasonal closure risk (confirm). Gothic architecture heavier than script\'s 1940s brick reform-school feel — but audience reads "prison," not "Gothic" specifically.',
     incentive: 'WV 27% refundable + 4% bonus for 10 WV residents = 31% · $50K min spend · transferable · no cap (same pool as TALA)'
   },
-  {
-    id: 'rockland',
-    name: 'Rockland Children\'s Psychiatric Center',
-    tier: '3',
-    tierLabel: 'Tier 3',
-    lat: 41.0524, lng: -73.9627,
-    address: 'Orangeburg, Rockland County, NY',
-    distance: '~3.5 hrs from Baltimore',
-    type: "Children's psychiatric center",
-    status: 'Partially demolished, partially accessible',
-    owner: 'NY State OPWDD',
-    scriptMatch: 3,
-    filmReady: false,
-    imgUrl: 'img/rockland.jpg',
-    imgCredit: 'Wikimedia Commons',
-    desc: "650-acre state psychiatric campus with dozens of abandoned Victorian-era buildings. The children's building specifically stood in for Litchfield Penitentiary in Orange Is the New Black. Partial demolition ongoing on broader campus.",
-    features: "Proven film location (OITNB) ✓, Victorian institutional aesthetic ✓, children's facility provenance ✓.",
-    missing: 'Partial demolition ongoing. 3.5+ hours from Baltimore. State-owned bureaucracy.',
-    contact: 'Rockland County Film Commission · NY State Film Office.',
-    verdict: 'Worth a call if Warwick falls through.',
-    concerns: 'Demolition may have removed key buildings.',
-    incentive: 'NY 25–35% tax credit'
-  },
-  {
-    id: 'letchworth',
-    name: 'Letchworth Village',
-    tier: '3',
-    tierLabel: 'Tier 3',
-    lat: 41.2029, lng: -74.0345,
-    address: 'Haverstraw, Rockland County, NY',
-    distance: '~3.5 hrs from Baltimore',
-    type: 'State institution (1911–1996)',
-    status: 'Abandoned, publicly accessible grounds',
-    owner: 'NY State + local',
-    scriptMatch: 3,
-    filmReady: false,
-    imgUrl: 'img/letchworth.jpg',
-    imgCredit: 'Wikimedia Commons',
-    desc: 'Abandoned state institution spread across multiple buildings in a wooded hillside setting. Creek, wooded approach roads, scattered institutional outbuildings, deteriorated interiors. Village of Haverstraw has an active film permit process on their official website.',
-    features: 'Multi-building wooded campus ✓, 1910s brick ✓, abandoned/accessible ✓, active permit pathway via Haverstraw ✓.',
-    missing: 'No juvenile or correctional infrastructure. 3.5 hours from Baltimore.',
-    contact: 'villageofhaverstraw.gov/filming · townofhaverstraw.org/application.html',
-    verdict: 'Worth a call for the atmosphere and established permit process.',
-    concerns: 'Distance. Severely deteriorated interiors.',
-    incentive: 'NY 25–35% tax credit'
-  },
-  // ELIMINATED LOCATIONS — all removed from active list:
-  // Victor Cullen Center — active DJS facility, abuse litigation
-  // Henryton State Hospital — demolished 2013
-  // Rosewood Center — redeveloped by Stevenson University
-  // Harrisburg State Hospital — actively demolished, felony trespass
-  // Forest Haven — federal land, active litigation since 1976
+  // ==========================================================
+  // REMOVED FROM ACTIVE LIST (producer review — Apr 2026)
+  // ==========================================================
+  // PERMANENTLY IMPOSSIBLE:
+  //   Victor Cullen Center      — active DJS facility, abuse litigation
+  //   Henryton State Hospital   — demolished 2013
+  //   Rosewood Center           — redeveloped by Stevenson University
+  //   Harrisburg State Hospital — actively demolished, felony trespass
+  //   Forest Haven              — federal land, active litigation since 1976
+  //
+  // EVALUATED AND RULED OUT (possible in theory, not worth scout day):
+  //   Mid-Orange / Warwick      — redeveloped sports complex, NY competitive credit,
+  //                               4hr from Baltimore. Not producible.
+  //   Alfred D. Noyes (MD DJS)  — $6M active dehardening removing cells/locks/bars.
+  //                               Single "H" building ≠ multi-building compound.
+  //                               CVA litigation sensitivity. DJS expects denial.
+  //                               Window is closed.
+  //   Glen Mills / Sleighton    — zero production access since early 2000s.
+  //                               Active PSP arson investigation (June 2024).
+  //                               Elwyn aggressively patrols trespass.
+  //                               Insurance won't underwrite post-arson.
+  //   Rockland Children's       — partial demolition ongoing. Only role was
+  //                               "Warwick fallback"; Warwick is cut, this goes too.
+  //                               3.5hr + NY competitive credit.
+  //   Letchworth Village        — missing juvenile/correctional infrastructure
+  //                               (the core thing the script needs). Severely
+  //                               deteriorated interiors won't insure.
+  //
+  // DEMOTED TO SECONDARY / B-UNIT:
+  //   Thunder Bridge            — active arts center, current buildings lack
+  //                               institutional aesthetic. Valuable only as
+  //                               CCC-camp flashback exterior, not primary shoot.
 ];
 
 const secondaryLocations = [
@@ -1241,6 +1116,17 @@ const secondaryLocations = [
     placeholderType: 'forest',
     desc: 'Scene 145: 174-block woods escape sequence. Whatever primary facility is selected, dense woods must be adjacent. Green Ridge State Forest or Savage River State Forest offer thousands of acres. Wills Mountain State Park (south of Frostburg) has undeveloped tracts for single-car gravel trails at night.',
     address: 'Adjacent to primary facility — Green Ridge / Savage River State Forests'
+  },
+  {
+    id: 'thunder-bridge',
+    name: 'Thunder Bridge — CCC Camp Flashback',
+    tier: 'secondary',
+    tierLabel: 'Secondary',
+    lat: 37.6289, lng: -79.5433,
+    imgUrl: 'img/natural-bridge.jpg',
+    placeholderType: 'forest',
+    desc: "Private 100-acre arts center in Arnolds Valley, VA — originally a 1930s CCC camp, then juvenile correctional facility (NBJCC). Demoted from primary: current buildings lack institutional decay aesthetic. BUT the thematic provenance (CCC → youth detention) is an exact match for the script's fictional facility origin — useful as flashback exterior / character-backstory location, not principal photography. On-site cabins for crew housing. Film-friendly private owner. 3hr drive.",
+    address: 'Natural Bridge Station, VA · Kpannabecker@comcast.net · 540-460-1542'
   }
 ];
 
