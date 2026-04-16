@@ -253,6 +253,19 @@ body {
   background: var(--bg-raised);
   border-bottom: 1px solid var(--border-subtle);
 }
+.loc-card-img-wrap { position: relative; }
+.loc-card-img-credit {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 3px 8px;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.04em;
+  color: rgba(230,235,232,0.78);
+  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0));
+  pointer-events: none;
+  text-transform: none;
+}
 .loc-card-img-placeholder {
   width: 100%;
   height: 180px;
@@ -1030,11 +1043,9 @@ const locations = [
     type: "Boys' reform school (est. 1826)",
     status: 'Largely abandoned since 2019',
     owner: 'PA DHS + private (complex)',
-    scriptMatch: 4,
     filmReady: false,
-    imgUrl: '',
-    placeholderType: 'institution',
-    imgCredit: '',
+    imgUrl: 'img/glen-mills.jpg',
+    imgCredit: 'Photo: Jim, the Photographer — Sleighton Farm (CC BY 2.0)',
     scriptMatch: 2,
     desc: "Oldest surviving reform school in the US (est. 1826). License revoked 2019 after abuse documentation. Clock Tower Schools (new nonprofit) received provisional license Jan 2023 for 20 boys on campus (610-459-8100). Adjacent Sleighton Farm: MAJOR ARSON June 2024 destroyed 100-year-old dormitory. PA State Police opened arson investigation. Elwyn (owner) patrols aggressively.",
     features: "Historical reform school provenance ✓, cottage dormitory layout on vast acreage ✓.",
@@ -1050,23 +1061,47 @@ const locations = [
     tier: '2',
     tierLabel: 'Tier 2',
     lat: 40.4610, lng: -78.5920,
-    address: 'Lilly, Cambria County, PA',
-    distance: '~3:30 from Baltimore',
-    type: 'Sanatorium (1913) → State prison',
-    status: 'Abandoned, photo tours operating',
-    owner: 'Pennsylvania DOC (state-owned)',
+    address: 'Cresson, Cambria County, PA',
+    distance: '~2:00 from Cumberland · ~3:30 from Baltimore',
+    type: 'TB Sanatorium (1913) → State prison (closed 2013)',
+    status: 'Abandoned, owner-operated tours',
+    owner: 'Big House Produce LLC (bought 2018)',
     scriptMatch: 4,
     filmReady: false,
     imgUrl: '',
     placeholderType: 'institution',
     imgCredit: '',
-    desc: "Originally a TB sanatorium (1913), later state hospital, then medium-security prison until closure in 2013. 34-acre campus with tiered buildings from 1900s gothic to modern institutional. Intact cell blocks with metal doors. Extensive underground utility tunnel system — rare find matching the script's maintenance tunnel escape (Scenes 142–144).",
-    features: 'Real cells ✓, long institutional corridors ✓, yard ✓, underground tunnels ✓, abandoned ✓, commercialized for urbex tours.',
-    missing: '3.5-hour drive. Adult prison aesthetic needs art dept work to age down. State-owned, negotiation through PA DOC.',
-    contact: 'info@cressonsanatorium.com · 814-940-5353 · PA Film Office.',
-    verdict: 'Most technically proficient location for the climax.',
-    concerns: 'Distance. Adult prison look. State bureaucracy for access.',
-    incentive: 'PA 25–30% tax credit'
+    desc: "Updated Apr 2026: Privately owned by Big House Produce LLC since 2018 — they run it as a dual-use hydroponic farm + urbex/paranormal tour operation (plus police/military airsoft training). That means: experienced with liability, indemnification, large crew access, and commercially motivated to sell multi-day buyouts. ~20 intact buildings on 34 acres: original 1913 sanatorium, older three-story cell blocks, modern two-story cell blocks, prison hospital, chapel, kitchen, gymnasium, yard. Underground utility tunnels. Public tour floor rate is $40/3hr — feature buyout will be multiples above that, but the shell infrastructure exists.",
+    features: 'Real cells (modern AND gothic) ✓, long institutional corridors ✓, yard ✓, underground tunnels ✓, owner-operated commercial access ✓, experienced with large-group bookings ✓.',
+    missing: 'No published direct phone for Big House Produce — primary booking channel is website contact form + Facebook Messenger (@cressonsanatorium), which they respond to fast. Hydroponic farm occupies some buildings — may reduce usable footprint; confirm on scout.',
+    contact: 'cressonsanatorium.com/tours · FB Messenger @cressonsanatorium · Pittsburgh Film Office (412) 261-2744 for permitting backup',
+    verdict: 'SLEEPER PICK. Least-filmed of the major PA abandoned prisons — fewer Shawshank associations pulling the audience out. Call this week.',
+    concerns: 'Distance (still inside WV/MD credit-commuting window). Adult prison look needs art dept aging. Hydroponic farm operational footprint.',
+    incentive: 'PA 25% base / 30% with Qualified Production Facility · transferable · $100M annual cap'
+  },
+  {
+    id: 'osr',
+    name: 'Ohio State Reformatory (Mansfield)',
+    tier: '2',
+    tierLabel: 'Tier 2',
+    lat: 40.7839, lng: -82.5038,
+    address: '100 Reformatory Rd, Mansfield, OH 44905',
+    distance: '~4:30 from Cumberland',
+    type: 'Reformatory (1896–1990) → film & museum venue',
+    status: 'Active museum + dedicated film rental program',
+    owner: 'Mansfield Reformatory Preservation Society (501c3)',
+    scriptMatch: 4,
+    filmReady: true,
+    imgUrl: '',
+    placeholderType: 'institution',
+    imgCredit: '',
+    desc: 'The Shawshank Redemption facility. Also: Air Force One (1997), Escape Plan: The Extractors (2019), Judas and the Black Messiah (2021 — solitary + West Cell Block). Dedicated rentals liaison, standing insurance template, 250,000 sq ft interior including the six-story East Cell Block (world\'s largest freestanding steel cell block), warden\'s quarters, solitary wing, chapel, hospital wing, administration. Ohio 30% REFUNDABLE credit on all cast/crew/production spend — stronger than PA\'s transferable model.',
+    features: 'Dedicated rentals staff ✓, feature-film rate card exists ✓, solitary wing ✓, multi-story cell blocks ✓, proven feature credits ✓, pre-certified insurance workflow ✓.',
+    missing: 'Distance is the only real issue — 4h 26m from Cumberland is at the edge of the crew-commute window. Higher rates than Cresson (professional tourism operation). Well-known visually = audience may read it as "Shawshank."',
+    contact: 'Ashleigh Ramey (MRPS Rentals) (419) 522-2644 · ashleigh@mrps.org · Jodie Snavely (Destination Mansfield) (419) 525-1300 · Ohio Film Office (614) 644-5156',
+    verdict: 'HIGH-CONFIDENCE FALLBACK. If TALA or WV Pen can\'t land a multi-week buyout, this is the immediate pivot — they will have a rate card on file within a phone call.',
+    concerns: 'Distance. Audience recognition. Higher rate than Cresson.',
+    incentive: 'OH 30% refundable on all production spend'
   },
   // TIER 3
   {
@@ -1094,26 +1129,26 @@ const locations = [
   },
   {
     id: 'wv-pen',
-    name: 'West Virginia Penitentiary',
-    tier: '3',
-    tierLabel: 'Tier 3',
+    name: 'West Virginia Penitentiary (Moundsville)',
+    tier: '1',
+    tierLabel: 'Tier 1 (pending call)',
     lat: 39.9207, lng: -80.7410,
-    address: 'Moundsville, WV',
-    distance: '~4 hrs from Baltimore',
+    address: '818 Jefferson Ave, Moundsville, WV 26041',
+    distance: '~2:34 from Cumberland · ~1:30 from Pittsburgh',
     type: 'Gothic stone prison (1866–1995)',
-    status: 'Tourism venue, active filming',
-    owner: 'Moundsville Economic Development Council',
+    status: 'Tourism venue + established film location',
+    owner: 'Moundsville Economic Development Council (MEDC)',
     scriptMatch: 4,
     filmReady: true,
     imgUrl: 'img/wv-pen.jpg',
     imgCredit: 'Wikimedia Commons',
-    desc: "Gothic-style stone prison operating from 1866 to 1995. 5-foot-thick stone walls, tiered cell blocks, parallelogram-shaped yard. Used for Mindhunter, Castle Rock, and other major productions. Original inmate graffiti adds production value. Established filming protocols.",
-    features: 'Tiered cells ✓, massive yard ✓, gothic institutional aesthetic ✓, proven film location ✓, active management.',
-    missing: '4-hour drive. Gothic stone aesthetic is heavier than the script\'s 1940s-era brick reform school feel.',
-    contact: 'Moundsville Economic Development Council · wvpentours.com',
-    verdict: 'Reliable fallback for Isolation Block and Main Yard sequences.',
-    concerns: 'Distance. Gothic architecture differs from script\'s mid-century institutional feel.',
-    incentive: 'WV 27–31% tax credit'
+    desc: "PROMOTED TO TIER 1 (Apr 2026). Feature credits: Silence of the Lambs (1991 — Hannibal's cell scenes), Fool's Parade (1971), Out of the Furnace (2013), Hulu's Castle Rock (2017, stood in for Shawshank State Prison). Plus Ghost Adventures, Ghost Hunters. Self-describes as \"tourist attraction, museum, training facility, and filming location.\" **Critical: shares WV 27%+4% refundable tax credit with Trans-Allegheny — same jurisdiction, 90 miles apart. Pairing the two = one tax pool, full institutional visual range, 20–30 shoot days anchored entirely on WV credit, no MD June 30 sunset exposure.** Gothic sandstone main, four cell blocks (Old Man Colony, North Hall, South Hall, New Wall), execution chamber, sugar shack (inmate bar), chapel.",
+    features: 'Tiered cells ✓, massive yard ✓, execution chamber ✓, gothic institutional aesthetic ✓, proven feature credits ✓, active management ✓, WV tax-credit jurisdiction aligns with TALA ✓.',
+    missing: 'Yelp shows "temporarily closed" as of Jan 2026 — verify operating status on first call (likely seasonal). Shares block with active Northern Correctional Facility + DCR training academy — training weeks are hard blackout dates.',
+    contact: '(304) 845-6200 · backup (304) 845-9810 ext. 403 · wvpentours.com · coordinate with Pam Haynes Martin, WV Film Office (304) 957-9382',
+    verdict: 'PAIR WITH TALA. Same WV credit, 90 min apart. First call to verify open status + multi-week rate.',
+    concerns: 'Seasonal closure risk (confirm). Gothic architecture heavier than script\'s 1940s brick reform-school feel — but audience reads "prison," not "Gothic" specifically.',
+    incentive: 'WV 27% refundable + 4% bonus for 10 WV residents = 31% · $50K min spend · transferable · no cap (same pool as TALA)'
   },
   {
     id: 'rockland',
@@ -1176,7 +1211,8 @@ const secondaryLocations = [
     tier: 'secondary',
     tierLabel: 'Secondary',
     lat: 39.6264, lng: -78.2377,
-    imgUrl: '',
+    imgUrl: 'img/gas-station.jpg',
+    imgCredit: 'Photo: Carol M. Highsmith · Library of Congress · Public Domain',
     placeholderType: 'highway',
     desc: "The script's 'LAST STOP — Gas & Sundries' maps to the rural Route 68 corridor between Hancock and Cumberland. The Flintstone Post Office/Gas Station on US-40 (21600 National Pike) is a ca. 1920 weatherboard station with a single pump. Drive Route 68 from Hancock to Cumberland to identify candidates. 1–2 day deal.",
     address: 'Route 68 corridor, Washington/Allegany Counties, MD'
@@ -1198,7 +1234,8 @@ const secondaryLocations = [
     tier: 'secondary',
     tierLabel: 'Secondary',
     lat: 39.7175, lng: -78.6516,
-    imgUrl: '',
+    imgUrl: 'img/i68-corridor.jpg',
+    imgCredit: 'Photo: Acroterion · Wikimedia Commons · CC BY-SA 4.0 — Sideling Hill cut',
     placeholderType: 'highway',
     desc: "Route 68 is a real highway in Western Maryland — the script names this road specifically. The I-68/US-40 corridor west of Cumberland climbs Sideling Hill with dense forest and historical mile markers. Canopied ridge roads, mountain scenery, entirely consistent with the script's geography.",
     address: 'I-68, Washington to Allegany Counties, MD'
@@ -1209,7 +1246,8 @@ const secondaryLocations = [
     tier: 'secondary',
     tierLabel: 'Secondary',
     lat: 39.6355, lng: -78.8102,
-    imgUrl: '',
+    imgUrl: 'img/motel.jpg',
+    imgCredit: 'Photo: Sdkb · Wikimedia Commons · CC BY-SA 4.0 (representative Motel 6 — not the LaVale location)',
     placeholderType: 'motel',
     desc: 'Standard budget motel with exterior corridors. 12310 Winchester Rd SW, LaVale MD 21502. Just off I-68 by Cumberland. Free onsite RV/bus parking for production basecamp. The motel-to-cell transformation in the final sequence will be executed through practical redress or VFX.',
     address: '12310 Winchester Rd SW, LaVale, MD 21502'
@@ -1234,8 +1272,9 @@ function renderCard(loc) {
   const tierClass = loc.tier === 'x' ? 'tier-x' : loc.tier === 'secondary' ? 'tier-secondary' : `tier-${loc.tier}`;
   const stars = loc.scriptMatch ? '★'.repeat(loc.scriptMatch) + '<span class="stars-empty">' + '★'.repeat(5 - loc.scriptMatch) + '</span>' : '';
 
+  const creditHtml = loc.imgCredit ? `<div class="loc-card-img-credit">${loc.imgCredit}</div>` : '';
   const imgHtml = loc.imgUrl
-    ? `<img class="loc-card-img" src="${loc.imgUrl}" alt="${loc.name}" loading="lazy" onerror="this.outerHTML='<div class=\\'loc-card-img-placeholder\\'>Photo unavailable</div>'">`
+    ? `<div class="loc-card-img-wrap"><img class="loc-card-img" src="${loc.imgUrl}" alt="${loc.name}" loading="lazy" onerror="this.outerHTML='<div class=\\'loc-card-img-placeholder\\'>Photo unavailable</div>'">${creditHtml}</div>`
     : `<div class="loc-card-img-placeholder">Scout photo needed</div>`;
 
   return `
@@ -1271,8 +1310,9 @@ function renderCard(loc) {
 
 function renderSecondaryCard(loc) {
   const pType = loc.placeholderType || 'secondary';
+  const creditHtml = loc.imgCredit ? `<div class="loc-card-img-credit">${loc.imgCredit}</div>` : '';
   const imgHtml = loc.imgUrl
-    ? `<img class="loc-card-img" src="${loc.imgUrl}" alt="${loc.name}" loading="lazy" onerror="this.outerHTML='<div class=\\'loc-card-img-placeholder\\' data-type=\\'${pType}\\'>${pType.toUpperCase()}</div>'">`
+    ? `<div class="loc-card-img-wrap"><img class="loc-card-img" src="${loc.imgUrl}" alt="${loc.name}" loading="lazy" onerror="this.outerHTML='<div class=\\'loc-card-img-placeholder\\' data-type=\\'${pType}\\'>${pType.toUpperCase()}</div>'">${creditHtml}</div>`
     : `<div class="loc-card-img-placeholder" data-type="${pType}">${pType.toUpperCase()}</div>`;
 
   return `
