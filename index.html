@@ -253,19 +253,6 @@ body {
   background: var(--bg-raised);
   border-bottom: 1px solid var(--border-subtle);
 }
-.loc-card-img-wrap { position: relative; }
-.loc-card-img-credit {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: 3px 8px;
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.04em;
-  color: rgba(230,235,232,0.78);
-  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0));
-  pointer-events: none;
-  text-transform: none;
-}
 .loc-card-img-placeholder {
   width: 100%;
   height: 180px;
@@ -945,9 +932,7 @@ const locations = [
     owner: 'Town of Warwick',
     scriptMatch: 5,
     filmReady: true,
-    imgUrl: '',
-    placeholderType: 'institution',
-    imgCredit: '',
+    imgUrl: 'img/mid-orange.jpg',
     tier: '2',
     tierLabel: 'Tier 2',
     desc: "Opened 1930s as New York's State Training School for Boys — a reform school. Closed 2011. A24 credits confirmed: Sing Sing (2023) and Marty Supreme (2024) both filmed here via Hudson Sports Complex. BUT: the campus is now a 'thriving business hub and sports park' — the 1930s dormitory buildings may still stand, but active commercial redevelopment means controlled access and likely significant interior renovation.",
@@ -971,9 +956,7 @@ const locations = [
     owner: 'Maryland DJS (state-owned)',
     scriptMatch: 5,
     filmReady: false,
-    imgUrl: '',
-    placeholderType: 'institution',
-    imgCredit: '',
+    imgUrl: 'img/noyes.jpg',
     tier: '3',
     tierLabel: 'Tier 3',
     scriptMatch: 3,
@@ -1068,9 +1051,7 @@ const locations = [
     owner: 'Big House Produce LLC (bought 2018)',
     scriptMatch: 4,
     filmReady: false,
-    imgUrl: '',
-    placeholderType: 'institution',
-    imgCredit: '',
+    imgUrl: 'img/cresson.jpg',
     desc: "Updated Apr 2026: Privately owned by Big House Produce LLC since 2018 — they run it as a dual-use hydroponic farm + urbex/paranormal tour operation (plus police/military airsoft training). That means: experienced with liability, indemnification, large crew access, and commercially motivated to sell multi-day buyouts. ~20 intact buildings on 34 acres: original 1913 sanatorium, older three-story cell blocks, modern two-story cell blocks, prison hospital, chapel, kitchen, gymnasium, yard. Underground utility tunnels. Public tour floor rate is $40/3hr — feature buyout will be multiples above that, but the shell infrastructure exists.",
     features: 'Real cells (modern AND gothic) ✓, long institutional corridors ✓, yard ✓, underground tunnels ✓, owner-operated commercial access ✓, experienced with large-group bookings ✓.',
     missing: 'No published direct phone for Big House Produce — primary booking channel is website contact form + Facebook Messenger (@cressonsanatorium), which they respond to fast. Hydroponic farm occupies some buildings — may reduce usable footprint; confirm on scout.',
@@ -1272,9 +1253,8 @@ function renderCard(loc) {
   const tierClass = loc.tier === 'x' ? 'tier-x' : loc.tier === 'secondary' ? 'tier-secondary' : `tier-${loc.tier}`;
   const stars = loc.scriptMatch ? '★'.repeat(loc.scriptMatch) + '<span class="stars-empty">' + '★'.repeat(5 - loc.scriptMatch) + '</span>' : '';
 
-  const creditHtml = loc.imgCredit ? `<div class="loc-card-img-credit">${loc.imgCredit}</div>` : '';
   const imgHtml = loc.imgUrl
-    ? `<div class="loc-card-img-wrap"><img class="loc-card-img" src="${loc.imgUrl}" alt="${loc.name}" loading="lazy" onerror="this.outerHTML='<div class=\\'loc-card-img-placeholder\\'>Photo unavailable</div>'">${creditHtml}</div>`
+    ? `<img class="loc-card-img" src="${loc.imgUrl}" alt="${loc.name}" loading="lazy" onerror="this.outerHTML='<div class=\\'loc-card-img-placeholder\\'>Photo unavailable</div>'">`
     : `<div class="loc-card-img-placeholder">Scout photo needed</div>`;
 
   return `
@@ -1310,9 +1290,8 @@ function renderCard(loc) {
 
 function renderSecondaryCard(loc) {
   const pType = loc.placeholderType || 'secondary';
-  const creditHtml = loc.imgCredit ? `<div class="loc-card-img-credit">${loc.imgCredit}</div>` : '';
   const imgHtml = loc.imgUrl
-    ? `<div class="loc-card-img-wrap"><img class="loc-card-img" src="${loc.imgUrl}" alt="${loc.name}" loading="lazy" onerror="this.outerHTML='<div class=\\'loc-card-img-placeholder\\' data-type=\\'${pType}\\'>${pType.toUpperCase()}</div>'">${creditHtml}</div>`
+    ? `<img class="loc-card-img" src="${loc.imgUrl}" alt="${loc.name}" loading="lazy" onerror="this.outerHTML='<div class=\\'loc-card-img-placeholder\\' data-type=\\'${pType}\\'>${pType.toUpperCase()}</div>'">`
     : `<div class="loc-card-img-placeholder" data-type="${pType}">${pType.toUpperCase()}</div>`;
 
   return `
