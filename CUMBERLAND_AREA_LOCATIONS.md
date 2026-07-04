@@ -15,7 +15,7 @@ Cumberland is a declining-industrial small city (~18k) that lost two hospitals i
 3. **Railroad infrastructure** (WMSR shops in Ridgeley WV, 1913 station, Frostburg 1891 depot) — owned by WMSR, period stock
 4. **Green Ridge State Forest + Green Ridge Youth Center** — already anchored; the youth center is literally a juvenile facility 30 minutes from Cumberland
 
-**There is no operational abandoned hospital/asylum/school in the Cumberland area as of April 2026.** Memorial, Sacred Heart/Braddock, and old Allegany High are all demolished. The closest "abandoned institutional" shell play is Trans-Allegheny itself (53 miles SW) or Pennhurst (174 miles NE). What Cumberland provides is **atmospheric exteriors, period streetscapes, small-scene interiors, and a forest anchor** — not a substitute for the primary facility.
+**There is no operational abandoned hospital/asylum/school in the Cumberland area as of April 2026.** Memorial, Sacred Heart/Braddock, and old Allegany High are all demolished. The closest "abandoned institutional" shell play is Trans-Allegheny itself (~120 road miles SW, ~2:30 — CORRECTED Jul 2026; a "53 miles" figure previously stated here was wrong) or Pennhurst (174 miles NE). What Cumberland provides is **atmospheric exteriors, period streetscapes, small-scene interiors, and a forest anchor** — not a substitute for the primary facility.
 
 **Crew base verdict:** No meaningful local crew. Nearest substantive grip/lighting is Pittsburgh (2hr), DC/Baltimore (2.5hr), or Morgantown WV for smaller units. Import crew + rental trucks — budget for travel days and housing.
 
@@ -37,9 +37,9 @@ Cumberland is a declining-industrial small city (~18k) that lost two hospitals i
 
 ### 2. TRANS-ALLEGHENY LUNATIC ASYLUM (Weston, WV) — REFERENCE BENCHMARK
 **Address:** 71 Asylum Dr, Weston, WV 26452
-**Distance from Cumberland:** 53 miles / ~1hr 15min via US-50 W
+**Distance from Cumberland:** ~120 road miles / ~2hr 30min (CORRECTED Jul 2026 — the "53 miles / 1hr 15min" previously stated here was wrong; straight-line alone is ~100 mi)
 **Status:** Private owner (Joe Jordan, purchased 2007 at auction). Operates as paid tours + overnight ghost hunts + film location rentals. Film-friendly with established workflow.
-**Why it's the anchor:** This is the only truly shootable massive institutional shell within 2 hours of Cumberland. It's closer to Cumberland than to most PA/MD production centers — a Cumberland-based unit can day-play there.
+**Why it's the anchor:** Still the most shootable massive institutional shell in the region, but at 2.5 hours it is NOT day-playable from a Cumberland base — plan overnights or a Weston-area mini-base for TALA blocks.
 **Owner / contact path:** trans-alleghenylunaticasylum.com — they have a published rental process. Expect 4-figure daily location fees for feature film use.
 **Dealbreakers:** Heavy prior film/TV usage means look is not exclusive (Buzzfeed, Ghost Adventures, indie horror have shot there). Schedule competition with paid tour operations.
 
@@ -172,7 +172,7 @@ Cumberland is a declining-industrial small city (~18k) that lost two hospitals i
 - Emmanuel Church tunnels (if access negotiated — this is the sleeper pick)
 - Forest / travel sequences (Green Ridge State Forest — already planned)
 
-Anchor the facility interiors/exteriors at **Trans-Allegheny** (53 mi SW) or **Pennhurst** (174 mi NE). Budget travel/housing for a DC or Pittsburgh crew.
+Anchor the facility interiors/exteriors at **Trans-Allegheny** (~120 mi SW, ~2:30) or **Pennhurst** (174 mi NE). Budget travel/housing for a DC or Pittsburgh crew.
 
 **Single highest-leverage action right now:** Email Catherine Batavick at MFO with a logline and ask specifically about (a) Green Ridge Youth Center access timeline post-FY2027 closure, and (b) state small-film tax credit pre-qualification for a MindInMotion production. That one email opens every state-owned door in this region.
 

@@ -49,7 +49,7 @@ All four recommendations below sit inside the six-hour ring from Cumberland, MD.
 **Travel from Cumberland:** 164 miles, 2h 34m on I-68 W. ([Travelmath](https://www.travelmath.com/distance/from/Moundsville,+WV/to/Cumberland,+MD))
 
 **Why it ranks high:**
-- Full feature credits: *Silence of the Lambs* (1991 — Hannibal Lecter's cell scenes), *Fool's Parade* (1971), *Out of the Furnace* (2013), Hulu's *Castle Rock* (2017) where it stood in for Shawshank State Prison. Plus *Ghost Adventures*, *Ghost Hunters*. ([The Intelligencer](https://www.theintelligencer.net/news/top-headlines/2017/09/moundsville-meets-maine-as-filming-wraps-at-former-west-virginia-penitentiary/), [Weelunk](https://weelunk.com/moundsville-at-the-movies-penitentiary-proves-a-haunting-draw-for-hollywood/))
+- Feature credits (CORRECTED Jul 2026): *Fool's Parade* (1971), *Out of the Furnace* (2013), Hulu's *Castle Rock* (filmed 2017) where it stood in for Shawshank State Prison. (*Silence of the Lambs* is a recurring tourism myth — its asylum/cell scenes shot around Pittsburgh, not Moundsville, which was still an operating prison in 1990.) Plus *Ghost Adventures*, *Ghost Hunters*. ([The Intelligencer](https://www.theintelligencer.net/news/top-headlines/2017/09/moundsville-meets-maine-as-filming-wraps-at-former-west-virginia-penitentiary/), [Weelunk](https://weelunk.com/moundsville-at-the-movies-penitentiary-proves-a-haunting-draw-for-hollywood/))
 - Self-describes as "tourist attraction, museum, training facility, and filming location." ([Wikipedia](https://en.wikipedia.org/wiki/West_Virginia_Penitentiary))
 - **WV tax credit stacks here (27% + 4% = 31% refundable) — same jurisdiction as Trans-Allegheny.** Putting both in the same production puts you in one incentive pool.
 - Gothic sandstone main building, four cell blocks (Old Man Colony, North Hall, South Hall, New Wall), original execution chamber, sugar shack (inmate bar), chapel. Interior cell/corridor spaces intact.
@@ -62,7 +62,7 @@ All four recommendations below sit inside the six-hour ring from Cumberland, MD.
 
 **What to ask:**
 1. Film rental rate for a 20–30 day buyout and whether that blocks public tours or whether they want to continue tours around the shoot (they did this for *Castle Rock*).
-2. WV Film Office coordination — ask them to loop in Pam Haynes Martin (WV Film Office, 304-957-9382) for tax credit certification; they'll know the process.
+2. WV Film Office coordination — loop in the WV Film Office (Dave Lavender, wvfilm@wv.gov) for tax credit certification. (CORRECTED Jul 2026: "Pam Haynes" left the office in 2017 when its budget was cut; it was re-established in 2022 under the WV Dept. of Economic Development.)
 3. Confirm active use as a Corrections Academy training site (DCR runs training weeks here) — those weeks will be blackout dates for filming.
 4. Power infrastructure, generator pad access, crew parking on the yard.
 
@@ -76,12 +76,12 @@ All four recommendations below sit inside the six-hour ring from Cumberland, MD.
 
 **Why it's on the list:**
 - This is the *Shawshank Redemption* facility. Plus *Air Force One* (1997), *Escape Plan: The Extractors* (2019), *Judas and the Black Messiah* (2021 — solitary + West Cell Block scenes). ([Destination Mansfield](https://destinationmansfield.com/film-mansfield/))
-- Verified **dedicated rentals liaison** (Ashleigh Ramey) and verified **county film liaison** (Jodie Snavely at Destination Mansfield).
+- Dedicated rentals/events liaison (CORRECTED Jul 2026: published contact is **Rita Miller-Bunker**, rita@mrps.org ext. 100 — the "Ashleigh Ramey" name did not verify) and verified **county film liaison** (Jodie Snavely at Destination Mansfield).
 - Six-story East Cell Block (the world's largest freestanding steel cell block), 250,000 sq ft total interior. Warden's quarters, solitary wing, chapel, hospital wing, administration.
 - **Ohio tax credit: 30% refundable on all cast, crew, and production spend** — refundable, not transferable. That's stronger than PA's transferable model. ([Ohio Dev Services](https://development.ohio.gov/))
 
 **First-call contact:**
-- **Ashleigh Ramey, MRPS Rentals: (419) 522-2644** — ashleigh@mrps.org
+- **Rita Miller-Bunker, MRPS Rentals/Events: (419) 522-2644 ext. 100** — rita@mrps.org (corrected Jul 2026)
 - County backup: **Jodie Snavely, Destination Mansfield Special Projects: (419) 525-1300** — jsnavely@destinationmansfield.com
 - Ohio Film Office (tax credit): **(614) 644-5156** — askohiofilm@development.ohio.gov
 - Address: 100 Reformatory Rd, Mansfield, OH 44905
@@ -106,7 +106,7 @@ All four recommendations below sit inside the six-hour ring from Cumberland, MD.
 - Contemporary operation means power and security are live — crew doesn't have to bring everything in.
 
 **First-call contact:**
-- **Sharon Pinkenson, Executive Director, Greater Philadelphia Film Office: (215) 686-2668** — pinkenson@film.org
+- **Greater Philadelphia Film Office: (215) 686-2668** — CORRECTED Jul 2026: Sharon Pinkenson stepped down Nov 2024 after ~30 years; Erin Wagner and Nicole Shiner are now co-executive directors. Main line unchanged.
 - Address: One Parkway Building, 1515 Arch Street, 11th Floor, Philadelphia, PA 19102
 - GPFO is the access broker. They deal with the city prison system on behalf of productions.
 
@@ -134,7 +134,7 @@ All four recommendations below sit inside the six-hour ring from Cumberland, MD.
 - **Kentucky State Reformatory (LaGrange, KY):** Inmates were being transitioned out as of 2023 but the facility remains operational. Not abandoned. 8+ hours from Cumberland regardless.
 - **Dixmont / Mayview (PA):** Both demolished.
 - **Embreeville State Hospital (PA):** Private ownership (2012 sale) with proposed 1,100-home development. No film access track record.
-- **Scotland School for Veterans' Children (PA):** Owned by Winebrenner Theological Seminary; deteriorating but access is unclear and no feature credits.
+- **Scotland School for Veterans' Children (PA):** CORRECTED Jul 2026 — the Winebrenner Theological Seminary ownership stated here was ~a decade stale (Winebrenner owned it only 2012–2017). Current owner is MSLH LLC (Bajnon family, acquired 2023, Chapter 11 filed Jan 1 2026). This site is in fact the Tier 1 "Scotland Campus" candidate on the live guide — the elimination note here is superseded.
 - **Lorton Reformatory (VA):** Fully converted to Workhouse Arts Center. Not abandoned aesthetic anymore.
 
 ## Eastern State Penitentiary — Worth a Note
