@@ -104,3 +104,17 @@ TALA is ~120 mi / ~2:30 from Cumberland (a research file claimed 53 mi / 1:15 �
 ## About the user
 
 Joshua Land, writer/director/producer (MindInMotion). Owner-operator. Direct answers with concrete numbers; allergic to AI overhedging. Runs parallel Claude + Gemini/ChatGPT deep research intentionally. Treat his story/tone/producer decisions as authoritative.
+
+---
+
+# Round-2 update (July 5, 2026)
+
+User ran the deep-research prompt pack; results reconciled into the guide (see GUIDE_FACTCHECK_JUL2026.md addendum). Headlines for the next session:
+
+1. **Scotland Campus ON HOLD** — Ch.11 dismissed Jun 12; sheriff's sale **Jul 10, 2026**. TODO ~Aug 2026: identify the new owner and re-approach.
+2. **Cresson has a NEW owner-operator** — Players Wanted Airsoft / Sierens family since Jan 1, 2026 (reopened Jan 31). Contact: info@cressonsanatorium.com, (582) 895-7444. Big House Produce is OUT — never owned it. All prior BHP-based notes are obsolete.
+3. **Quehanna first call = PA DCNR Moshannon district** (814-765-0821, John Hecker, Fd09@pa.gov), mechanism = commercial activities agreement, precedent = SCI Pittsburgh shoots.
+4. **Fort Ritchie direct contact:** Ritchie Revival (301) 241-2231, Office@ritchierevival.com. Redevelopment accelerating — scout early.
+5. **Green Ridge Youth Center post-closure filming is near-dead** (ten buildings slated for demolition by 2027).
+6. **WV credit:** no extension passed; Dec 31, 2027 sunset stands; model credit sale at ~90¢/$.
+7. **WV Pen added credits:** Prison Break reboot pilot (2025), Time of Death (2026) — strengthens the Tier 1 case.
