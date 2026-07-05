@@ -33,6 +33,8 @@ Cumberland is a declining-industrial small city (~18k) that lost two hospitals i
 
 **Action:** Email MFO now to flag interest in the site post-decommission. This is the single highest-value lead in the region.
 
+**UPDATE (Jul 2026):** Downgrade this lead. The DJS Facilities Master Plan / capital budget confirms the FY2027 closure is definite (a consolidated Western MD replacement center is being built), BUT the plan includes **demolition of ten campus buildings on or before 2027** — the state intends to raze it, not mothball it. The May 2025 flood (full evacuation to Western Maryland Children's Center) also confirmed the campus sits in an active flood plain, a real basecamp/equipment risk. Post-closure filming window, if any, would be a narrow gap between vacancy and demolition. Keep the MFO flag in place but do not plan around this site.
+
 ---
 
 ### 2. TRANS-ALLEGHENY LUNATIC ASYLUM (Weston, WV) — REFERENCE BENCHMARK

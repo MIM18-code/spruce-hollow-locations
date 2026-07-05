@@ -832,7 +832,7 @@ footer {
       </thead>
       <tbody>
         <tr><td>SCI Cresson</td><td>1</td><td>PA</td><td>~2:00</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$</td><td>Only location with all 12 script sub-locations in one footprint</td></tr>
-        <tr><td>Scotland Campus</td><td>1</td><td>PA</td><td>~1:42</td><td><span class="stars">★★★★★</span></td><td>$$</td><td>75 buildings + 1892 tunnels · Ch.11 owner · LocationsHub listed</td></tr>
+        <tr><td>Scotland Campus</td><td>1</td><td>PA</td><td>~1:42</td><td><span class="stars">★★★★★</span></td><td>$$</td><td>75 buildings + 1892 tunnels · ⚠ sheriff's sale Jul 10 2026 — on hold pending new owner</td></tr>
         <tr><td>Quehanna Boot Camp</td><td>1</td><td>PA</td><td>~3:30</td><td><span class="stars">★★★★★</span></td><td>$</td><td>Just-closed boot camp = perfect juvenile aesthetic · state disposition (DCNR land — path unconfirmed)</td></tr>
         <tr><td>Pence Springs Resort</td><td>1</td><td>WV</td><td>~3:24</td><td><span class="stars">★★★★★</span></td><td>$$</td><td>Intact 1947–85 women's prison cells on 3rd floor · WV credit</td></tr>
         <tr><td>Trans-Allegheny Lunatic Asylum</td><td>1</td><td>WV</td><td>~3:15</td><td><span class="stars">★★★★</span><span class="stars-empty">★</span></td><td>$$$</td><td>Seclusion-wing cells · JCFilms 2025 feature credit · WV 31%</td></tr>
@@ -988,7 +988,7 @@ footer {
     <div class="incentive-card">
       <p class="incentive-state">Maryland</p>
       <p class="incentive-pct">28%</p>
-      <p class="incentive-note">DECADE Act (HB0898) signed May 12, 2026 (Ch. 352) — credit secure, $10M per-production cap eliminated. $12M FY26 pool. Small Film: $25K min / $125K max credit. Standard: $250K min. File Application for Qualification with MFO.</p>
+      <p class="incentive-note">DECADE Act (HB0898) signed May 12, 2026 (Ch. 352) — credit secured through FY2030, $10M per-production cap eliminated, credit now transferable. $12M annual pool (unchanged FY27). Small Film: $25K min / $125K max credit / ≥50% filming in MD / AUP audit waived under $250K spend. Watch-out: any individual paid &gt;$500K total is wholly disqualified from the credit. File Application for Qualification with MFO.</p>
     </div>
     <div class="incentive-card">
       <p class="incentive-state">Pennsylvania</p>
@@ -998,7 +998,7 @@ footer {
     <div class="incentive-card" style="border-color: var(--accent);">
       <p class="incentive-state" style="color: var(--accent-bright);">West Virginia ★</p>
       <p class="incentive-pct">27–31%</p>
-      <p class="incentive-note"><strong>Transferable (NOT refundable) · no cap.</strong> $50K min spend. 4% bonus for hiring 10+ WV residents = 31%. Credit is sold at a discount, not paid out as cash. Program sunsets Dec 31, 2027 — confirm timing before shoot window. TALA + WV Pen qualify.</p>
+      <p class="incentive-note"><strong>Transferable (NOT refundable) · no cap.</strong> $50K min spend. 4% bonus for hiring 10+ WV residents = 31%. Credits sell at ~88–92¢ on the dollar (historic WV avg 90¢; brokers: State Tax Incentives et al.) — model net ~28% at the 31% tier. Sunsets Dec 31, 2027; no 2026 extension bill passed — qualifying spend must land by then. TALA + WV Pen qualify.</p>
     </div>
     <div class="incentive-card">
       <p class="incentive-state">Ohio</p>
@@ -1066,10 +1066,10 @@ footer {
       <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Castle Rock, Out of the Furnace, Fool's Parade. Pairs with TALA on same WV credit. Confirmed open and running tours as of July 2026 — the Jan 2026 "temporarily closed" flag was seasonal.</p>
     </div>
     <div class="contact-card">
-      <h4>5. SCI Cresson / Big House Produce</h4>
-      <p>🌐 <a href="https://cressonsanatorium.com/tours" target="_blank">cressonsanatorium.com/tours</a></p>
-      <p>💬 FB Messenger @cressonsanatorium (fastest channel)</p>
-      <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">Owner runs commercial tours + airsoft training. Already experienced with indemnification and large groups. Negotiate multi-week buyout rate.</p>
+      <h4>5. SCI Cresson / Players Wanted Airsoft</h4>
+      <p>📞 (582) 895-7444 · ✉ info@cressonsanatorium.com</p>
+      <p>🌐 <a href="https://cressonsanatorium.com" target="_blank">cressonsanatorium.com</a> · 251 Correction Road, Cresson PA</p>
+      <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.72rem;">New owner-operators (Sierens family) since Jan 2026 — reopened tours/airsoft Jan 31. Experienced with indemnification and large groups. Negotiate multi-week buyout rate. (Big House Produce is out — don't contact.)</p>
     </div>
     <div class="contact-card">
       <h4>6. Ohio State Reformatory (Mansfield)</h4>
@@ -1191,19 +1191,19 @@ const locations = [
     address: 'Cresson, Cambria County, PA',
     distance: '~2:00 from Cumberland · ~3:30 from Baltimore',
     type: 'TB Sanatorium (1913) → State prison (closed 2013)',
-    status: 'Abandoned, owner-operated tours',
-    owner: 'Big House Produce LLC (acquired ~2019)',
+    status: 'Abandoned · tours/events reopened Jan 31, 2026 under new management',
+    owner: 'Players Wanted Airsoft / Sierens family (took over Jan 1, 2026; WTAJ reports purchase)',
     scriptMatch: 4,
     filmReady: false,
     costTier: '$$',
     costNote: 'Owner-operator (Big House Produce) — multi-week buyout negotiable, likely $5–15K/week',
     imgUrl: 'img/cresson.jpg',
-    desc: "Updated Jul 2026: Privately owned by Big House Produce LLC (acquisition announced 2019) — they run it as a dual-use hydroponic farm + urbex/paranormal tour operation, and have hosted airsoft events. That means: experienced with liability, indemnification, large crew access, and commercially motivated to sell multi-day buyouts. ~20 intact buildings on 34 acres: original 1913 sanatorium, older three-story cell blocks, modern two-story cell blocks, prison hospital, chapel, kitchen, gymnasium, yard. Underground utility tunnels (confirmed open on tours). Past ticketed events ran ~$13–40/person (exact current tour pricing unpublished) — a feature buyout will be negotiated, but the shell infrastructure exists.",
-    features: 'Real cells (modern AND gothic) ✓, long institutional corridors ✓, yard ✓, underground tunnels ✓, owner-operated commercial access ✓, experienced with large-group bookings ✓.',
-    missing: 'No published direct phone for Big House Produce — primary booking channel is website contact form + Facebook Messenger (@cressonsanatorium), which they respond to fast. Hydroponic farm occupies some buildings — may reduce usable footprint; confirm on scout.',
-    contact: 'cressonsanatorium.com/tours · FB Messenger @cressonsanatorium · Pittsburgh Film Office (412) 261-2744 for permitting backup',
+    desc: "OWNERSHIP CORRECTED Jul 2026: Big House Produce never owned the site — it leased (with purchase option) from Carl Weaver & Ben Cobelentz, who bought it at state auction in Dec 2016 ($600K). A 2023 lease dispute led to BHP's eviction and an events hiatus. **As of January 1, 2026, Players Wanted Airsoft (Mark & Angela Sierens) runs the property — WTAJ (Jan 15, 2026) reports the Sierens purchased it — and public tours/events reopened January 31, 2026** (self-guided tours, flashlight tours, paranormal investigations, airsoft) via cressonsanatorium.com. An airsoft operator as owner-manager is arguably better for us: routine large-group liability, indemnification, and full-site event logistics. ~20 intact buildings on the 34-acre tour zone: original 1913 sanatorium, older three-story cell blocks, modern two-story cell blocks, prison hospital, chapel, kitchen, gymnasium, yard. Underground utility tunnels confirmed open on tours. Site has no power/climate control; some structures (chapel balcony, Buildings F/G/H) reported off-limits — scout required.",
+    features: 'Real cells (modern AND gothic) ✓, long institutional corridors ✓, yard ✓, underground tunnels ✓, owner-operated commercial access ✓, experienced with large-group/airsoft event logistics ✓.',
+    missing: 'New management is 6 months in — no film-rental precedent under the Sierens yet. No power/climate control; portable everything. Deed-level ownership (vs. management) can be confirmed via Cambria County recorder if the contract requires it.',
+    contact: 'Players Wanted Airsoft: info@cressonsanatorium.com · (582) 895-7444 · 251 Correction Road, Cresson PA 16630 · cressonsanatorium.com · Pittsburgh Film Office (412) 261-2744 for permitting backup. Do NOT contact Big House Produce (out since 2023 eviction/2026 handover).',
     verdict: 'SLEEPER PICK. Least-filmed of the major PA abandoned prisons — fewer Shawshank associations pulling the audience out. Call this week.',
-    concerns: 'Distance (still inside WV/MD credit-commuting window). Adult prison look needs art dept aging. Hydroponic farm operational footprint.',
+    concerns: 'Distance (still inside WV/MD credit-commuting window). Adult prison look needs art dept aging. New-owner transition: confirm authority to sign a multi-week agreement and whether any residual Weaver/Cobelentz interest encumbers it.',
     incentive: 'PA 25% base / 30% with Qualified Production Facility · transferable · $100M annual cap'
   },
   {
@@ -1248,7 +1248,7 @@ const locations = [
     costNote: 'Active museum + film venue — $15–40K/week for multi-week feature',
     imgUrl: 'img/wv-pen.jpg',
     imgCredit: 'Wikimedia Commons',
-    desc: "PROMOTED TO TIER 1 (Apr 2026). Verified feature credits: Fool's Parade (1971), Out of the Furnace (2013), Hulu's Castle Rock (filmed 2017, stood in for Shawshank State Prison). Plus Ghost Adventures, Ghost Hunters. (Note: the oft-repeated \"Silence of the Lambs\" credit is a tourism myth — those scenes shot around Pittsburgh; removed Jul 2026.) Self-describes as \"tourist attraction, museum, training facility, and filming location.\" **Critical: shares WV 27%+4% transferable tax credit with Trans-Allegheny — same jurisdiction, 90 miles apart. Pairing the two = one tax pool, full institutional visual range, 20–30 shoot days anchored entirely on WV credit.** Gothic sandstone main, four cell blocks (Old Man Colony, North Hall, South Hall, New Wall), execution chamber, sugar shack (inmate bar), chapel.",
+    desc: "PROMOTED TO TIER 1 (Apr 2026). Verified feature credits: Fool's Parade (1971), Out of the Furnace (2013), Hulu's Castle Rock (filmed 2017, stood in for Shawshank State Prison) — plus NEW (Jul 2026): Hulu's Prison Break reboot pilot shot here June 2025, and the theatrical thriller Time of Death (Michael Kelly), shot here, released June 12, 2026. Two productions in 12 months = active, current film operation. Plus Ghost Adventures, Ghost Hunters. (Note: the oft-repeated \"Silence of the Lambs\" credit is a tourism myth — those scenes shot around Pittsburgh; removed Jul 2026.) Self-describes as \"tourist attraction, museum, training facility, and filming location.\" **Critical: shares WV 27%+4% transferable tax credit with Trans-Allegheny — same jurisdiction, 90 miles apart. Pairing the two = one tax pool, full institutional visual range, 20–30 shoot days anchored entirely on WV credit.** Gothic sandstone main, four cell blocks (Old Man Colony, North Hall, South Hall, New Wall), execution chamber, sugar shack (inmate bar), chapel.",
     features: 'Tiered cells ✓, massive yard ✓, execution chamber ✓, gothic institutional aesthetic ✓, proven feature credits ✓, active management ✓, WV tax-credit jurisdiction aligns with TALA ✓.',
     missing: 'RESOLVED Jul 2026: confirmed open and running tours (the Jan 2026 Yelp "temporarily closed" was seasonal). Shares block with active Northern Correctional Facility + DCR training academy — training weeks are hard blackout dates.',
     contact: '(304) 845-6200 · backup (304) 845-9810 ext. 403 · wvpentours.com · coordinate with WV Film Office (Dave Lavender) · wvfilm@wv.gov',
@@ -1261,24 +1261,24 @@ const locations = [
     id: 'scotland-campus',
     name: 'Scotland Campus',
     tier: '1',
-    tierLabel: 'Tier 1 (pending call)',
+    tierLabel: 'Tier 1 (ON HOLD — sale Jul 10)',
     lat: 39.9534, lng: -77.6817,
     address: 'Scotland, Franklin County, PA 17254',
     distance: '~1:42 from Cumberland',
     type: "Former PA state school for veterans' children (1895–2009)",
-    status: 'Owner MSLH LLC filed Chapter 11 · Jan 1, 2026',
-    owner: 'MSLH LLC (Bajnon family) — in bankruptcy',
+    status: '⚠ Ch.11 DISMISSED Jun 12, 2026 · SHERIFF\'S SALE Jul 10, 2026',
+    owner: 'MSLH LLC (Bajnon family) — ownership in flux pending sheriff\'s sale',
     scriptMatch: 5,
     filmReady: true,
     costTier: '$$',
     costNote: 'Chapter 11 owner, highly motivated — $2–8K/day estimated',
     imgUrl: 'img/scotland-campus.jpg',
-    desc: '185 acres, 75 buildings, including original 1892 tunnel system. Already listed on LocationsHub film marketplace (ID 043-10084203). Owner filed Chapter 11 January 1, 2026 — bankruptcy context means highly motivated for any rental income. Summer (June–August) blocked by Hasidic summer camp lease; September–May wide open. This is a sleeper anchor — a 75-building campus with tunnels at 1h 42min from Cumberland is rare.',
-    features: 'Enormous scale ✓, tunnel system ✓, multi-era institutional architecture ✓, already on a film marketplace ✓, motivated-seller ownership context ✓, 1h 42min drive from Cumberland ✓.',
-    missing: 'Summer filming window closed (Hasidic camp). Bankruptcy chain of authority may delay contract signing. Verify current access + rental terms during Chapter 11 proceedings.',
-    contact: 'LocationsHub listing #043-10084203 · chapter 11 bankruptcy trustee likely involved in access approval',
-    verdict: 'SLEEPER ANCHOR. Call LocationsHub this week. Closest realistic "full institutional compound" to Cumberland.',
-    concerns: 'Chapter 11 complexity. Summer blackout. Worth the friction — this is closer than TALA and potentially cheaper.',
+    desc: 'STATUS CHANGE (Jul 2026): MSLH\'s Chapter 11 was DISMISSED June 12, 2026 (U.S. Trustee motion; debtor did not oppose), and the postponed sheriff\'s sale is back on — **scheduled July 10, 2026** for 3583 Scotland Road (Franklin County sheriff portal, virtual sale). Ownership will likely change hands imminently; whoever takes it (lender Gable Holdings CM-1 or a third-party bidder) is the new negotiating counterparty. The asset itself is unchanged: 185 acres, 75 buildings, original 1892 tunnel system, LocationsHub listing still active (ID 043-10070694). A 75-building campus with tunnels at 1h 42min from Cumberland is still rare — but the "motivated Ch.11 owner" pitch is dead; the new pitch is to the post-sale owner, who will want interim income on a vacant campus.',
+    features: 'Enormous scale ✓, tunnel system ✓, multi-era institutional architecture ✓, LocationsHub listing still live ✓, 1h 42min drive from Cumberland ✓.',
+    missing: 'Ownership unresolved until the July 10, 2026 sheriff\'s sale settles and deed transfers. Prior Hasidic summer-camp lease status under new ownership unknown. Do not scout until the new owner is identified.',
+    contact: 'WAIT for sheriff\'s sale outcome (Franklin County PA sheriff portal) · then approach new owner · LocationsHub listing #043-10070694 as parallel channel',
+    verdict: 'ON HOLD UNTIL ~AUG 2026. Check the July 10 sheriff\'s sale result, identify the new owner, then pitch interim location income on a vacant campus.',
+    concerns: 'Sale-transition limbo; new owner\'s plans unknown (prior interest included redevelopment and institutional uses). Re-verify everything post-sale.',
     incentive: 'PA 25% base / 30% with Qualified Production Facility · transferable · $100M annual cap'
   },
   {
@@ -1290,8 +1290,8 @@ const locations = [
     address: 'Karthaus Township, Clearfield County, PA',
     distance: '~3:30 from Cumberland',
     type: 'PA DOC boot camp (1992–Jan 2026)',
-    status: 'CLOSED January 28, 2026 · disposition path unconfirmed',
-    owner: 'Land: PA DCNR · facility vacated by PA DOC (confirm controlling agency)',
+    status: 'CLOSED January 28, 2026 · reverts to PA DCNR (per DOC statement)',
+    owner: 'PA DCNR (Moshannon State Forest district) — DOC MOU ended at closure',
     scriptMatch: 5,
     filmReady: false,
     costTier: '$',
@@ -1299,9 +1299,9 @@ const locations = [
     imgUrl: 'img/quehanna.jpg',
     desc: 'Closed Jan 28 2026 — final inmates transferred (Shapiro admin cost-cutting: occupancy was 89 of 612 beds; boot camp program moved to SCI Houtzdale / Cambridge Springs). CORRECTED Jul 2026: the land is owned by PA DCNR, and no DGS surplus listing for Quehanna is confirmed — first call must establish which agency controls disposition. Architecturally a PERFECT match for Spruce Hollow: military-style boot camp layout = less hardened than a max prison but more institutional than a school. Authentic dorms + cells + communal halls. **No perimeter fence** — matches script\'s "isolated but not hardened" geography. Remote Karthaus Township = no neighbors to complain about night shoots.',
     features: 'Authentic boot-camp layout ✓, dorms ✓, cells ✓, no fence (matches script) ✓, remote/isolated ✓, just-closed (intact condition) ✓, state motivated to recoup holding costs ✓.',
-    missing: 'Film-access pathway not yet established — and the controlling agency is unconfirmed (DCNR owns the land; DOC vacated; DGS surplus role unverified). First call: PA DCNR + PA DOC to establish who signs.',
-    contact: 'PA DCNR (landowner) + PA DOC · Pittsburgh Film Office (412) 261-2744 for permit facilitation',
-    verdict: 'HIGHEST SCRIPT-MATCH find. Once controlling agency confirmed, propose Facility Use Agreement pegged to state holding costs (utilities + site rep + admin + modest margin).',
+    missing: 'CONFIRMED Jul 2026 (via DOC closure-response page): the site operated under a DOC–DCNR MOU and reverts to DCNR ownership at closure. No surplus listing, sale, or reuse plan has appeared. Commercial use of state forest land runs through a DCNR "commercial activities agreement." Precedent exists on PA corrections property: six productions shot at former SCI Pittsburgh (Mindhunter S2, Escape at Dannemora, Mayor of Kingstown S2, American Rust, others), contributing ~$500K in site improvements.',
+    contact: 'PA DCNR Moshannon State Forest district: (814) 765-0821 · District Forester John Hecker · Fd09@pa.gov · 3372 State Park Road, Penfield PA 15849 · fallback: DGS Bureau of Real Estate (Andrew Lick, Acquisition & Disposition Division) · Pittsburgh Film Office (412) 261-2744',
+    verdict: 'HIGHEST SCRIPT-MATCH find. Call the Moshannon district office and ask about a commercial activities agreement for the vacated boot camp; cite the SCI Pittsburgh filming precedent.',
     concerns: 'Disposition timing and agency ambiguity — if the property is repurposed or sold before the shoot window, access evaporates. Move fast.',
     incentive: 'PA 25% base / 30% with Qualified Production Facility · transferable · $100M annual cap'
   },
@@ -1338,7 +1338,7 @@ const locations = [
     address: 'Pence Springs, Summers County, WV',
     distance: '~3:24 from Cumberland',
     type: 'Resort → Greenbrier Academy (women\'s correctional 1947–1985) → private',
-    status: 'For sale · $2.2M via Foxfire Realty',
+    status: 'For sale · $2.2M via Foxfire Realty (listing confirmed active Jun 2026)',
     owner: 'Private · actively listed',
     scriptMatch: 5,
     filmReady: false,
@@ -1347,7 +1347,7 @@ const locations = [
     imgUrl: 'img/pence-springs.jpg',
     desc: '138 acres, 44,000 SF total. 25K SF Georgian brick hotel + gymnasium + arts building + dormitory rooms. **CRITICAL: intact women\'s prison cell block from 1947–1985 on the 3rd floor — literal cells, on-spec for Spruce Hollow interiors.** Building was the Greenbrier Academy women\'s correctional facility for 38 years. Same WV tax-credit jurisdiction as TALA and WV Pen. Owner is actively trying to sell — location filming would generate attention on the listing.',
     features: 'Actual prison cell block (1947–1985) ✓, Georgian brick hotel ✓, gym ✓, dormitory rooms ✓, for-sale owner motivated to say yes ✓, WV credit jurisdiction ✓.',
-    missing: 'No prior film track record. Shoot window tied to "before it sells" — if listing closes, access evaporates. Condition of cell block not scout-verified.',
+    missing: 'No prior film track record. Shoot window tied to "before it sells" — if listing closes, access evaporates. Condition of cell block not scout-verified. NOTE Jul 2026: interior renovations completed Dec 2025 and grounds actively host events (horse show, Jul 4 2026) — property is maintained and show-ready, but confirm renovations didn\'t soften the 3rd-floor cell block.',
     contact: 'Randy "Riverbend" Burdette (304) 667-2897 · David Sibray (304) 575-7390 · Foxfire Realty',
     verdict: 'THE CELL-BLOCK PICK. Only site in the region with intact 20th-century women\'s prison cells. Call the realtor this week.',
     concerns: 'Property is actively for sale — could close at any time. Move fast.',
@@ -1373,9 +1373,9 @@ const locations = [
     desc: 'CORRECTED Jul 2026: **Paramount+ Special Ops: Lioness filmed on-site in 2022 (S1) and 2024 (S2) — confirmed feature-quality production access.** Closed 1998 under BRAC. OWNERSHIP UPDATE: PenMar Development Corp transferred the property to Washington County in 2016; local developer John Krumpotich (JG Business Development, "Ritchie Revival") bought it April 2021 (~$1.85M) and is actively redeveloping (taproom, gallery, museum, manufacturing tenants). Castle-like stone architecture, concrete barracks, parade field, gymnasium, ammo bunkers. Some buildings rehabbed, others stand mostly as-was. **~1:25 from Cumberland** — still the closest major institutional candidate.',
     features: 'Stone castle-style architecture ✓, concrete barracks ✓, parade field ✓, gym ✓, Paramount+ Lioness credit (2022 & 2024) ✓, ~1:25 from Cumberland ✓, film-experienced private landlord ✓.',
     missing: 'No published production-rental rate card — owner handles case-by-case. Mixed condition wing-to-wing requires site scout for safety.',
-    contact: 'John Krumpotich / JG Business Development ("Ritchie Revival") · Washington County MD government as backup route',
+    contact: 'Ritchie Revival: (301) 241-2231 · Office@ritchierevival.com · 25009 Lake Wastler Dr, Highfield-Cascade MD 21719 · their "Featured in: Lioness" page explicitly invites inquiries · Washington County MD government as backup route',
     verdict: 'MAJOR TIER 1. Lioness proves film access. Closest serious institutional option to Cumberland. Call JG Business Development this week.',
-    concerns: 'Active redevelopment means some parcels are leased to businesses — schedule around their ops. Redevelopment pace may reduce the "abandoned" look over time.',
+    concerns: 'Redevelopment is accelerating (Jan 2026: $300K state grant for boutique-hotel conversion of Bldg 603; new tenants incl. 35K-sqft medical manufacturer) — the "abandoned" inventory shrinks every quarter. Scout sooner rather than later.',
     incentive: 'MD 28% tax credit (DECADE Act signed May 12, 2026 — secure)'
   },
   {
@@ -1399,7 +1399,7 @@ const locations = [
     missing: 'Partial active use on lower floors. 1.5hr drive.',
     contact: 'Preston County BOE (304) 329-0580 · local principal (304) 892-3866 · same call also clears Fellowsville Elementary (closed 2025) + Tunnelton-Denver (closed 2013)',
     verdict: 'WV SCHOOLS CLUSTER. One phone call to Preston BOE opens THREE closed buildings.',
-    concerns: 'Upper-floor condition unverified. 1987 architecture may not sell the script\'s mid-century facility without heavy dressing — scout before committing its Tier 2 slot.',
+    concerns: 'Upper-floor condition unverified. 1987 architecture may not sell the script\'s mid-century facility without heavy dressing — scout before committing its Tier 2 slot. (1987 date re-confirmed Jul 2026 via the school\'s own district website — built in Manheim after the 1985 flood destroyed the Buffalo Street school.) BONUS: the town\'s 1910 Gothic Revival brick school + 1925 auditorium on Buffalo St survives as the Szilagyi Center arts/museum venue (Rowlesburg Revitalization Committee) — THE period building in town, likely rentable; consider it for period classroom/auditorium interiors instead.',
     incentive: 'WV 27% + 4% bonus for 10 WV residents = 31% · transferable (NOT refundable)'
   },
   // ==========================================================
